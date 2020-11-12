@@ -23,8 +23,9 @@
 \section*{Exercise 1.1}
 Let $(X, \mathcal{A})$ be a measurable space, $Y := \{-1,1\}$, and $P$ be a distribution on $X \times Y$. Define $\eta: X \rightarrow [0,1]$ by $\eta(x) := P(\{1\}|x)$ for all $x \in X$.\\
  \\
-i) Use $\eta$ to determine the Bayes risk and all Bayes decision functions for the binary classification loss $L_\text{class}:Y \rightarrow [0,\infty )$.\vspace{0.5em}\\
-Basic Assumption:\\
+\textsl{i)} Use $\eta$ to determine the Bayes risk and all Bayes decision functions for the binary classification loss $L_\text{class}:Y \rightarrow [0,\infty )$.\vspace{0.5em}\\
+\textsl{Solution:} \\
+Basic assumptions:\\
 We have regular conditional probability $P(\cdot|x)$ met the following conditions:\\ 
 \indent 1) $P(\cdot|x):\{-1,1\} \rightarrow [0,1]$ is a probability measure \\
 \indent 2) $x \mapsto P(B|x)$ is measurable for $B = \{1\}$ or $B = \{-1\}$ \\
@@ -50,12 +51,13 @@ According to (1.2.8), all functions which satisfy the equation above is a Bayes 
 Now we compute the Bayes Risk:\\
 $R^*_{L,P} =  \displaystyle{ \int_{X} C^*_{L,p}(x) \text{d}P_X = \int_{\{\eta(x)\geq \frac{1}{2}\}}(1-\eta(x)) \text{d}P_X + \int_{\{\eta(x) < \frac{1}{2}\}}\eta(x) \text{d}P_X } $.\\
  \\
-ii) Given a so-called weight parameter $\alpha \in (0,1)$ and consider the $\alpha$-weighted binary classification loss $L_{\text{class},\alpha} : Y \times \mathbb{R} \rightarrow [0,\infty)$ defined by:
+\textsl{ii)} Given a so-called weight parameter $\alpha \in (0,1)$ and consider the $\alpha$-weighted binary classification loss $L_{\text{class},\alpha} : Y \times \mathbb{R} \rightarrow [0,\infty)$ defined by:
 \begin{align*}
 L_{\text{class},\alpha} = \begin{cases} 1-\alpha, & y=1 \land t<0 \cr \alpha, & y=-1 \land t\geq 0 \cr 0, &\text{otherwise} \end{cases} .
 \end{align*}
 Determine the corresponding Bayes risk and Bayes decision functions and compare your findings to part i).
 \vspace{0.5em}\\
+\textsl{Solution:} \\
 Analogously to part i), we want to minimize the average loss in $t$ according to $P($d$y|x)$ for every given $x \in X$. In the second case, 
 \begin{align*}
 \displaystyle{ \int_{Y} L_{\text{class},\alpha}(y,\tilde{t})\, P(\text{d}y|x) }
@@ -74,5 +76,77 @@ According to (1.2.8), all functions which satisfy the equation of integral above
 Now we compute the Bayes Risk:\\
 $R^*_{L,P} =  \displaystyle{ \int_{X} C^*_{L,p}(x) \text{d}P_X = \int_{\{\eta(x)\geq \alpha\}}\alpha(1-\eta(x)) \text{d}P_X + \int_{\{\eta(x) < \alpha\}} (1-\alpha)\eta(x) \text{d}P_X } $.\\
  \\
+
+\newpage
+
+\section*{Exercise 1.4}
+Let $(X,\mathcal{A})$ be a measurable space, $\mu$ be a $\sigma$-finite measure on $X$, and $h_{-1}, h_1:X \rightarrow [0,\infty)$ be measurable with 
+\begin{align*}
+\displaystyle{ \int_{X} h_{-1} \, \text{d}\mu = \int_{X} h_{1} \, \text{d}\mu = 1. } \tag{1.5.1}
+\end{align*}
+For a given $p\in [0,1]$ and $Y:= \{ -1,1 \}$ consider the distribution $P$ on $X \times Y$ that is uniquely determined by 
+\begin{align*}
+P(\{ y \} \times A) := 
+ & = \begin{cases} 
+ (1-p)\displaystyle{\int_A h_{-1} \, \text{d}\mu }, & y = -1 \cr  
+ p \displaystyle{\int_A h_{1} \, \text{d}\mu }, &y = 1 
+\end{cases}. \tag{1.5.2}
+\end{align*}
+for all $y\in Y$ and $A\in \mathcal{A}$.\\
+\\
+\textsl{i)} Determine the marginal distribution $P_X$ and the function $\eta:X\rightarrow [0,1]$ that is given by $\eta(x):=P(\{ 1 \}| x)$ for all $x\in X$. \vspace{0.5em}\\
+\textsl{Solution:} \\
+Consider an arbitrary $A\in\mathcal{A}$. \\
+Observe that $Y\times A = \{ -1,1 \} \times A = \{-1\} \times A \ \dot{\cup} \ \{1\} \times A $. \\
+With $\sigma$-additivity of measure we have: \\
+$P_X(A) = P(Y\times A) =  P( \{-1\} \times A )+P( \{1\} \times A) $ \\
+\hspace*{3.1cm}$= \displaystyle{ (1-p)\int_A h_{-1} \,\text{d}\mu + p\int_A h_{1}\, \text{d}\mu = \int_A (1-p)h_{-1}+p\, h_{1}\, \text{d}\mu } $.\\
+\vspace*{-1em} \\
+The above equality states that $f:=(1-p)h_{-1}+p\, h_{1}$ is the density of $P_X$ with respect to $\mu$ . $\quad \  (*)$ \\
+Also observe that $f$ is a positive function. \hspace{8.3cm}$ (\#)$\\
+For $\eta$ we consider the quantity $P(\{ 1\} \times A)$ along with the equality 1.2.3 from lecture slides:\\
+\vspace*{-1em} \\
+\indent $P(\{ 1\} \times A) \overset{1.2.3}{=} \displaystyle{ \int_{A} P({1}| x)\, \text{d}P_X(x) \overset{(*)}{=} \int_{A} P({1}| x)\, f(x)\, \text{d}\mu(x)  }  $.\\
+With (1.5.2) and $\eta=P(\{ 1\}|x)$ we then have: $\displaystyle{ \int_{A} p\,h_1\, \text{d}\mu =\int_A \eta \, f \, \text{d}\mu  }$.\\
+Particularly it holds that $\displaystyle{ \int_{X} p\,h_1\, \text{d}\mu =\int_X \eta \, f \, \text{d}\mu  }$.\\
+\vspace*{-1em} \\
+$\Rightarrow \ $ For $\mu$-almost every $x\in X$ we have $\displaystyle{ p\ h_1 = \eta \, f } $. \\
+\vspace*{-1em} \\
+$\overset{(\#)}{\Rightarrow} \ $ For $\mu$-almost every $x\in X$ it holds that $\displaystyle{ \eta = \frac{p\, h_1}{f} = \frac{p \, h_1}{(1-p)\,h_1 + p\, h_1} }$.\\
+$(*)$ says that $P_X \ll \mu \ \Rightarrow \ $ For $P_X$-almost every $x\in X$ it holds that $\displaystyle{ \eta = \frac{p \, h_1}{(1-p)\,h_1 + p\, h_1} }$.\\
+\\
+\textsl{ii)} Show that for all distributions $P$ on $X\times Y$ there exists $\mu, p$, and measurable $h_{-1}, h: X \rightarrow [0,\infty)$ with (1.5.1) such that (1.5.2) holds. \vspace{0.5em}\\
+\textsl{Solution:} \\
+$Y=\{-1,1\}$ is a closed subset of $\mathbb{R} \ $\\
+$\Rightarrow \ $regular conditional probability $P(\cdot | \cdot )$ with respect to $P$ exists.  \\
+Define $\eta(x):=P(\{1\}|x)$ which is measurable per Definition of $P(\cdot | \cdot )$. \\
+Consider $p:=P(\{1\} \times X) \in [0,1]$ as $P$ is a probability measure. \\
+If $p \in \{0,1\}$, then we have to... \\
+Now suppose $p \in (0,1)$. \\
+We prose that with the following quantities  (1.5.1) and (1.5.2) can be satisfied: \\
+\indent $h_1 := (1-p)\, \eta, \quad h_{-1}:= p\, (1-\eta) \quad $\\
+\vspace*{-1em} \\
+\indent $\mu : \mathcal{A} \rightarrow [0,\infty) , A \mapsto \displaystyle{ \frac{P(Y\times A)}{p\, (1-p)} = \frac{1}{p\, (1-p)} P_X(A) }$.\\
+\vspace*{-1.3em} \\
+Notice that:  $h_1, h_{-1}$ are measurable since $\eta$ is measurable, and it holds that $p\, (1-p)\, \mu = P_X$. \\
+Now we verify (1.5.1): \\
+\indent $\displaystyle{ \int_X h_1 \, \text{d}\mu = \int_X p\, (1-\eta) \, \text{d}\mu = \int_X \frac{p\, (1-\eta)}{p\, (1-p)} \, \text{d}P_X = \int_X \frac{p\, (\,1-P(\{1\}|x)\,)}{p\, (1-p)} \, \text{d}P_X  }$.\\
+Thus\\
+\indent $ \displaystyle{  p = P(\{1\}\times X) = \int_X P(\{1\}|x) \, \text{d}P_X = \int_X P(\{1\}|x) p\,(1-p) \, \text{d}\mu} $\\
+\hspace*{6.1cm} $\displaystyle{ = p \int_X p\,(1-p) \, P(\{1\}|x) \, d\mu = p\int_X h_1 \, \text{d} \mu  }$.\\
+\indent $\Rightarrow \  \displaystyle{  1 = \int_X (1-p)\, \eta \, \text{d} \mu = \int_X h_1 \text{d} \mu }$.\\
+\indent $ \displaystyle{  (1-p) = 1- P(\{1\}\times X) = 1- \int_X P(\{1\}|x) \, \text{d}P_X } $\\
+\hspace*{4.5cm} $\displaystyle{ = \int_X (1-p)\,\eta \, \text{d} \mu - \int_X p\, (1-p)\,\eta \, \text{d} \mu   }$\\
+\hspace*{4.5cm} $\displaystyle{ = (1-p) \int_X p\,(1-\eta) \, \text{d} \mu = (1-p) \int_X h_{-1} \, \text{d} \mu }$.\\
+\indent $\Rightarrow \  \displaystyle{  1 = \int_X p\, (1-\eta)\,\text{d} \mu = \int_X h_{-1} \text{d} \mu }$.\\
+\vspace*{-1em} \\
+(1.5.2) should also be verified: \\
+\indent $ P( \{1\} \times A ) = \displaystyle{ \int_A P(\{1\} | x )\, \text{d}  P_X = \int_A \eta \, \text{d} P_X = \int_A \eta\, p\, (1-p)\, \text{d} \mu = p\int_A (1-p)\, \eta \, \text{d} \mu = p \int_A h_1\, \text{d} \mu  } $.\\
+\indent $ P( \{-1\} \times A ) = \displaystyle{ \int_A P(\{-1\} | x )\, \text{d}  P_X = \int_A (1-P(\{1\} | x )  ) \, \text{d} P_X = \int_A (1- \eta)\, p\, (1-p)\, \text{d} \mu  } $\\
+\hspace*{9.9cm}$\displaystyle{ = (1-p)\int_A h_{-1} \, \text{d} \mu   }$.\\
+\\
+\textsl{ii)} Find an interpretation of your findings in the spirit of Bayes's theorem. \\
+\textsl{Solution:} \\
+
 
 \end{document}

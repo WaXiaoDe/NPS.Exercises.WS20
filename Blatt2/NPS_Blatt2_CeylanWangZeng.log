@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018) (preloaded format=pdflatex 2019.3.14)  11 NOV 2020 20:59
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018) (preloaded format=pdflatex 2019.3.14)  12 NOV 2020 18:04
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -235,20 +235,20 @@ LaTeX Font Info:    Try loading font information for U+msb on input line 22.
 (/usr/local/texlive/2018/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-Underfull \hbox (badness 10000) in paragraph at lines 24--35
+Underfull \hbox (badness 10000) in paragraph at lines 24--36
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 24--35
+Underfull \hbox (badness 10000) in paragraph at lines 24--36
 
  []
 
-LaTeX Font Info:    Try loading font information for U+bbm on input line 39.
+LaTeX Font Info:    Try loading font information for U+bbm on input line 40.
 (/usr/local/texlive/2018/texmf-dist/tex/latex/bbm-macros/ubbm.fd
 File: ubbm.fd 1999/03/15 V 1.2 Font definition for bbm font - TH
 )
-Overfull \hbox (27.24231pt too wide) in paragraph at lines 47--54
+Overfull \hbox (27.24231pt too wide) in paragraph at lines 48--55
 $\OMS/cmsy/m/n/10 )   \OML/cmm/m/it/10 C[]\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 x\O
 T1/cmr/m/n/10 ) = [] = 1 \OMS/cmsy/m/n/10 ^^A \OML/cmm/m/it/10 P\OT1/cmr/m/n/10
  (\OML/cmm/m/it/10 y \OMS/cmsy/m/n/10 ^^A \OML/cmm/m/it/10 t[]\OT1/cmr/m/n/10 (
@@ -261,52 +261,85 @@ $
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 47--54
+Underfull \hbox (badness 10000) in paragraph at lines 48--55
 
  []
 
 [1
 
 {/usr/local/texlive/2018/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
-Underfull \hbox (badness 10000) in paragraph at lines 71--77
+Underfull \hbox (badness 10000) in paragraph at lines 73--79
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 71--77
+Underfull \hbox (badness 10000) in paragraph at lines 73--79
 
  []
 
-[2] (./NPS_Blatt2_CeylanWangZeng.aux) ) 
+[2]
+Underfull \hbox (badness 10000) in paragraph at lines 94--150
+
+ []
+
+
+Overfull \hbox (3.05365pt too wide) in paragraph at lines 94--150
+\T1/cmr/m/n/10 Also ob-ser-ve that $\OML/cmm/m/it/10 f$ \T1/cmr/m/n/10 is a po-
+si-ti-ve func-ti-on.  $\OT1/cmr/m/n/10 (#)$ 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 94--150
+
+ []
+
+
+Overfull \hbox (1.54475pt too wide) in paragraph at lines 94--150
+[]$\OML/cmm/m/it/10 P\OT1/cmr/m/n/10 (\OMS/cmsy/m/n/10 f\OT1/cmr/m/n/10 1\OMS/c
+msy/m/n/10 g ^^B \OML/cmm/m/it/10 A\OT1/cmr/m/n/10 ) = []$\T1/cmr/m/n/10 . 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 94--150
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 94--150
+
+ []
+
+[3] [4] (./NPS_Blatt2_CeylanWangZeng.aux) ) 
 Here is how much of TeX's memory you used:
- 2568 strings out of 492649
- 32310 string characters out of 6129622
- 111112 words of memory out of 5000000
+ 2569 strings out of 492649
+ 32321 string characters out of 6129622
+ 116104 words of memory out of 5000000
  6425 multiletter control sequences out of 15000+600000
- 15751 words of font info for 50 fonts, out of 8000000 for 9000
+ 16570 words of font info for 51 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 27i,16n,27p,260b,201s stack positions out of 5000i,500n,10000p,200000b,80000s
- </Users/maggie/Library/texlive/2018/tex
-mf-var/fonts/pk/ljfour/public/bbm/bbm10.600pk>{/usr/local/texlive/2018/texmf-di
-st/fonts/enc/dvips/cm-super/cm-super-t1.enc}</usr/local/texlive/2018/texmf-dist
-/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/local/texlive/2018/texmf-dist/
-fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/texlive/2018/texmf-dist/f
-onts/type1/public/amsfonts/cm/cmmi7.pfb></usr/local/texlive/2018/texmf-dist/fon
-ts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2018/texmf-dist/fonts
-/type1/public/amsfonts/cm/cmr5.pfb></usr/local/texlive/2018/texmf-dist/fonts/ty
-pe1/public/amsfonts/cm/cmr7.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1
-/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/
-public/amsfonts/cm/cmsy7.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/pu
-blic/amsfonts/symbols/msbm10.pfb></usr/local/texlive/2018/texmf-dist/fonts/type
-1/public/cm-super/sfbx1440.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/
-public/cm-super/sfrm0700.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/pu
-blic/cm-super/sfrm1000.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/publ
-ic/cm-super/sfrm1200.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public
-/cm-super/sfrm1728.pfb>
-Output written on NPS_Blatt2_CeylanWangZeng.pdf (2 pages, 150376 bytes).
+ 27i,17n,27p,277b,205s stack positions out of 5000i,500n,10000p,200000b,80000s
+ </Users/Simba/Library/texlive/2018/
+texmf-var/fonts/pk/ljfour/public/bbm/bbm10.600pk>{/usr/local/texlive/2018/texmf
+-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc}</usr/local/texlive/2018/texmf-d
+ist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/local/texlive/2018/texmf-di
+st/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/texlive/2018/texmf-dis
+t/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/local/texlive/2018/texmf-dist/
+fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2018/texmf-dist/fo
+nts/type1/public/amsfonts/cm/cmr5.pfb></usr/local/texlive/2018/texmf-dist/fonts
+/type1/public/amsfonts/cm/cmr7.pfb></usr/local/texlive/2018/texmf-dist/fonts/ty
+pe1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2018/texmf-dist/fonts/typ
+e1/public/amsfonts/cm/cmsy7.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1
+/public/amsfonts/symbols/msbm10.pfb></usr/local/texlive/2018/texmf-dist/fonts/t
+ype1/public/cm-super/sfbx1440.pfb></usr/local/texlive/2018/texmf-dist/fonts/typ
+e1/public/cm-super/sfrm0700.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1
+/public/cm-super/sfrm1000.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/p
+ublic/cm-super/sfrm1200.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/pub
+lic/cm-super/sfrm1728.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/publi
+c/cm-super/sfsl1000.pfb>
+Output written on NPS_Blatt2_CeylanWangZeng.pdf (4 pages, 172322 bytes).
 PDF statistics:
- 73 PDF objects out of 1000 (max. 8388607)
- 53 compressed objects within 1 object stream
+ 83 PDF objects out of 1000 (max. 8388607)
+ 60 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
  1 words of extra memory for PDF output out of 10000 (max. 10000000)
 
