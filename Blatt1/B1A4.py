@@ -64,6 +64,7 @@ def empirical_risk(train_X, train_Y, test_X, test_Y, k):
 # Define a function that finds the  k with minimal emprical risk for a 
 # given range of k
 def find_k_star(train_X, train_Y, test_X, test_Y, k_range):
+    # ？
     k_star = 99999999999999
     k_star_list = []
     min_risk = 999999999
