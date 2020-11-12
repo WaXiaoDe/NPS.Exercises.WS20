@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018) (preloaded format=pdflatex 2019.3.14)  12 NOV 2020 18:04
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018) (preloaded format=pdflatex 2019.3.14)  12 NOV 2020 22:32
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -176,21 +176,70 @@ Package: ifxetex 2010/09/12 v0.6 Provides ifxetex conditional
 \Gm@layoutvoffset=\dimen120
 \Gm@dimlist=\toks28
 )
+(/usr/local/texlive/2018/texmf-dist/tex/latex/tools/multicol.sty
+Package: multicol 2018/04/01 v1.8r multicolumn formatting (FMi)
+\c@tracingmulticols=\count105
+\mult@box=\box28
+\multicol@leftmargin=\dimen121
+\c@unbalance=\count106
+\c@collectmore=\count107
+\doublecol@number=\count108
+\multicoltolerance=\count109
+\multicolpretolerance=\count110
+\full@width=\dimen122
+\page@free=\dimen123
+\premulticols=\dimen124
+\postmulticols=\dimen125
+\multicolsep=\skip49
+\multicolbaselineskip=\skip50
+\partial@page=\box29
+\last@line=\box30
+\maxbalancingoverflow=\dimen126
+\mult@rightbox=\box31
+\mult@grightbox=\box32
+\mult@gfirstbox=\box33
+\mult@firstbox=\box34
+\@tempa=\box35
+\@tempa=\box36
+\@tempa=\box37
+\@tempa=\box38
+\@tempa=\box39
+\@tempa=\box40
+\@tempa=\box41
+\@tempa=\box42
+\@tempa=\box43
+\@tempa=\box44
+\@tempa=\box45
+\@tempa=\box46
+\@tempa=\box47
+\@tempa=\box48
+\@tempa=\box49
+\@tempa=\box50
+\@tempa=\box51
+\c@columnbadness=\count111
+\c@finalcolumnbadness=\count112
+\last@try=\dimen127
+\multicolovershoot=\dimen128
+\multicolundershoot=\dimen129
+\mult@nat@firstbox=\box52
+\colbreak@box=\box53
+\mc@col@check@num=\count113
+)
 (./NPS_Blatt2_CeylanWangZeng.aux)
 \openout1 = `NPS_Blatt2_CeylanWangZeng.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 21.
-LaTeX Font Info:    ... okay on input line 21.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 21.
-LaTeX Font Info:    ... okay on input line 21.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 21.
-LaTeX Font Info:    ... okay on input line 21.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 21.
-LaTeX Font Info:    ... okay on input line 21.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 21.
-LaTeX Font Info:    ... okay on input line 21.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 21.
-LaTeX Font Info:    ... okay on input line 21.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 23.
+LaTeX Font Info:    ... okay on input line 23.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 23.
+LaTeX Font Info:    ... okay on input line 23.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 23.
+LaTeX Font Info:    ... okay on input line 23.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 23.
+LaTeX Font Info:    ... okay on input line 23.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 23.
+LaTeX Font Info:    ... okay on input line 23.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 23.
+LaTeX Font Info:    ... okay on input line 23.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
@@ -226,29 +275,29 @@ LaTeX Font Info:    ... okay on input line 21.
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
-LaTeX Font Info:    Try loading font information for U+msa on input line 22.
+LaTeX Font Info:    Try loading font information for U+msa on input line 24.
 (/usr/local/texlive/2018/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 22.
+LaTeX Font Info:    Try loading font information for U+msb on input line 24.
 
 (/usr/local/texlive/2018/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-Underfull \hbox (badness 10000) in paragraph at lines 24--36
+Underfull \hbox (badness 10000) in paragraph at lines 26--38
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 24--36
+Underfull \hbox (badness 10000) in paragraph at lines 26--38
 
  []
 
-LaTeX Font Info:    Try loading font information for U+bbm on input line 40.
+LaTeX Font Info:    Try loading font information for U+bbm on input line 42.
 (/usr/local/texlive/2018/texmf-dist/tex/latex/bbm-macros/ubbm.fd
 File: ubbm.fd 1999/03/15 V 1.2 Font definition for bbm font - TH
 )
-Overfull \hbox (27.24231pt too wide) in paragraph at lines 48--55
+Overfull \hbox (27.24231pt too wide) in paragraph at lines 50--57
 $\OMS/cmsy/m/n/10 )   \OML/cmm/m/it/10 C[]\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 x\O
 T1/cmr/m/n/10 ) = [] = 1 \OMS/cmsy/m/n/10 ^^A \OML/cmm/m/it/10 P\OT1/cmr/m/n/10
  (\OML/cmm/m/it/10 y \OMS/cmsy/m/n/10 ^^A \OML/cmm/m/it/10 t[]\OT1/cmr/m/n/10 (
@@ -261,82 +310,80 @@ $
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 48--55
+Underfull \hbox (badness 10000) in paragraph at lines 50--57
 
  []
 
 [1
 
 {/usr/local/texlive/2018/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
-Underfull \hbox (badness 10000) in paragraph at lines 73--79
+Underfull \hbox (badness 10000) in paragraph at lines 75--81
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 73--79
+Underfull \hbox (badness 10000) in paragraph at lines 75--81
 
  []
 
 [2]
-Underfull \hbox (badness 10000) in paragraph at lines 94--150
+Underfull \hbox (badness 10000) in paragraph at lines 96--139
 
  []
 
 
-Overfull \hbox (3.05365pt too wide) in paragraph at lines 94--150
-\T1/cmr/m/n/10 Also ob-ser-ve that $\OML/cmm/m/it/10 f$ \T1/cmr/m/n/10 is a po-
-si-ti-ve func-ti-on.  $\OT1/cmr/m/n/10 (#)$ 
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 94--150
+Underfull \hbox (badness 10000) in paragraph at lines 96--139
 
  []
 
 
-Overfull \hbox (1.54475pt too wide) in paragraph at lines 94--150
-[]$\OML/cmm/m/it/10 P\OT1/cmr/m/n/10 (\OMS/cmsy/m/n/10 f\OT1/cmr/m/n/10 1\OMS/c
-msy/m/n/10 g ^^B \OML/cmm/m/it/10 A\OT1/cmr/m/n/10 ) = []$\T1/cmr/m/n/10 . 
+Overfull \hbox (16.59274pt too wide) in paragraph at lines 96--139
+[]$[]$\T1/cmr/m/n/10 . 
+ []
+
+[3]
+Underfull \hbox (badness 10000) in paragraph at lines 139--151
+
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 94--150
+Underfull \hbox (badness 10000) in paragraph at lines 139--151
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 94--150
+Underfull \hbox (badness 10000) in paragraph at lines 152--154
 
  []
 
-[3] [4] (./NPS_Blatt2_CeylanWangZeng.aux) ) 
+[4] (./NPS_Blatt2_CeylanWangZeng.aux) ) 
 Here is how much of TeX's memory you used:
- 2569 strings out of 492649
- 32321 string characters out of 6129622
- 116104 words of memory out of 5000000
- 6425 multiletter control sequences out of 15000+600000
+ 2686 strings out of 492649
+ 34104 string characters out of 6129622
+ 117837 words of memory out of 5000000
+ 6538 multiletter control sequences out of 15000+600000
  16570 words of font info for 51 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 27i,17n,27p,277b,205s stack positions out of 5000i,500n,10000p,200000b,80000s
- </Users/Simba/Library/texlive/2018/
-texmf-var/fonts/pk/ljfour/public/bbm/bbm10.600pk>{/usr/local/texlive/2018/texmf
--dist/fonts/enc/dvips/cm-super/cm-super-t1.enc}</usr/local/texlive/2018/texmf-d
-ist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/local/texlive/2018/texmf-di
-st/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/texlive/2018/texmf-dis
-t/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/local/texlive/2018/texmf-dist/
-fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2018/texmf-dist/fo
-nts/type1/public/amsfonts/cm/cmr5.pfb></usr/local/texlive/2018/texmf-dist/fonts
-/type1/public/amsfonts/cm/cmr7.pfb></usr/local/texlive/2018/texmf-dist/fonts/ty
-pe1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2018/texmf-dist/fonts/typ
-e1/public/amsfonts/cm/cmsy7.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1
-/public/amsfonts/symbols/msbm10.pfb></usr/local/texlive/2018/texmf-dist/fonts/t
-ype1/public/cm-super/sfbx1440.pfb></usr/local/texlive/2018/texmf-dist/fonts/typ
-e1/public/cm-super/sfrm0700.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1
-/public/cm-super/sfrm1000.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/p
-ublic/cm-super/sfrm1200.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/pub
-lic/cm-super/sfrm1728.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/publi
-c/cm-super/sfsl1000.pfb>
-Output written on NPS_Blatt2_CeylanWangZeng.pdf (4 pages, 172322 bytes).
+ 27i,17n,27p,270b,205s stack positions out of 5000i,500n,10000p,200000b,80000s
+ </Users/Simba/Library/texlive/2018/texm
+f-var/fonts/pk/ljfour/public/bbm/bbm10.600pk>{/usr/local/texlive/2018/texmf-dis
+t/fonts/enc/dvips/cm-super/cm-super-t1.enc}</usr/local/texlive/2018/texmf-dist/
+fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/local/texlive/2018/texmf-dist/f
+onts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/texlive/2018/texmf-dist/fo
+nts/type1/public/amsfonts/cm/cmmi7.pfb></usr/local/texlive/2018/texmf-dist/font
+s/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2018/texmf-dist/fonts/
+type1/public/amsfonts/cm/cmr5.pfb></usr/local/texlive/2018/texmf-dist/fonts/typ
+e1/public/amsfonts/cm/cmr7.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/
+public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/p
+ublic/amsfonts/cm/cmsy7.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/pub
+lic/amsfonts/symbols/msbm10.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1
+/public/cm-super/sfbx1440.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/p
+ublic/cm-super/sfrm0700.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/pub
+lic/cm-super/sfrm1000.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/publi
+c/cm-super/sfrm1200.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/
+cm-super/sfrm1728.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/cm
+-super/sfsl1000.pfb>
+Output written on NPS_Blatt2_CeylanWangZeng.pdf (4 pages, 171948 bytes).
 PDF statistics:
  83 PDF objects out of 1000 (max. 8388607)
  60 compressed objects within 1 object stream

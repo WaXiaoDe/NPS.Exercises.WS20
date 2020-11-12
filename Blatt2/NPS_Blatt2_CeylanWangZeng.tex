@@ -12,6 +12,8 @@
 \usepackage{geometry}
 \geometry{a4paper,left=3cm,right=3cm,top=2.5cm,bottom=2.5cm}
 
+\usepackage{multicol}
+
 \renewcommand{\baselinestretch}{1.45} 
 
 \title{Non-Paramatic Statistic Sheet 2}
@@ -99,17 +101,16 @@ for all $y\in Y$ and $A\in \mathcal{A}$.\\
 Consider an arbitrary $A\in\mathcal{A}$. \\
 Observe that $Y\times A = \{ -1,1 \} \times A = \{-1\} \times A \ \dot{\cup} \ \{1\} \times A $. \\
 With $\sigma$-additivity of measure we have: \\
-$P_X(A) = P(Y\times A) =  P( \{-1\} \times A )+P( \{1\} \times A) $ \\
-\hspace*{3.1cm}$= \displaystyle{ (1-p)\int_A h_{-1} \,\text{d}\mu + p\int_A h_{1}\, \text{d}\mu = \int_A (1-p)h_{-1}+p\, h_{1}\, \text{d}\mu } $.\\
+\indent $P_X(A) = P(Y\times A) =  P( \{-1\} \times A )+P( \{1\} \times A) $ \\
+\indent \hspace*{3.1cm}$= \displaystyle{ (1-p)\int_A h_{-1} \,\text{d}\mu + p\int_A h_{1}\, \text{d}\mu = \int_A (1-p)h_{-1}+p\, h_{1}\, \text{d}\mu } $.\\
 \vspace*{-1em} \\
-The above equality states that $f:=(1-p)h_{-1}+p\, h_{1}$ is the density of $P_X$ with respect to $\mu$ . $\quad \  (*)$ \\
-Also observe that $f$ is a positive function. \hspace{8.3cm}$ (\#)$\\
+Also observe that $f:=(1-p)h_{-1}+p\, h_{1}$ is a positive function. \hspace{4.8cm}$ (\#)$\\
+$\Rightarrow \ f$ is the density of $P_X$ with respect to $\mu$ . \hspace{7.6cm}$ (*)$ \\
 For $\eta$ we consider the quantity $P(\{ 1\} \times A)$ along with the equality 1.2.3 from lecture slides:\\
 \vspace*{-1em} \\
-\indent $P(\{ 1\} \times A) \overset{1.2.3}{=} \displaystyle{ \int_{A} P({1}| x)\, \text{d}P_X(x) \overset{(*)}{=} \int_{A} P({1}| x)\, f(x)\, \text{d}\mu(x)  }  $.\\
-With (1.5.2) and $\eta=P(\{ 1\}|x)$ we then have: $\displaystyle{ \int_{A} p\,h_1\, \text{d}\mu =\int_A \eta \, f \, \text{d}\mu  }$.\\
-Particularly it holds that $\displaystyle{ \int_{X} p\,h_1\, \text{d}\mu =\int_X \eta \, f \, \text{d}\mu  }$.\\
-\vspace*{-1em} \\
+\indent $P(\{ 1\} \times A) \overset{1.2.3}{=} \displaystyle{ \int_{A} P({1}| x)\, \text{d}P_X(x) \overset{(*)}{=} \int_{A} P({1}| x)\, f(x)\, \text{d}\mu(x)  }  $.\vspace*{0.3em}\\
+Because of (1.5.2) and $\eta=P(\{ 1\}|x)$ we then have: $\displaystyle{ \int_{A} p\,h_1\, \text{d}\mu =\int_A \eta \, f \, \text{d}\mu  }$.\vspace*{0.1em}\\
+Particularly it holds that $\displaystyle{ \int_{X} p\,h_1\, \text{d}\mu =\int_X \eta \, f \, \text{d}\mu  }$.\vspace*{0.7em}\\
 $\Rightarrow \ $ For $\mu$-almost every $x\in X$ we have $\displaystyle{ p\ h_1 = \eta \, f } $. \\
 \vspace*{-1em} \\
 $\overset{(\#)}{\Rightarrow} \ $ For $\mu$-almost every $x\in X$ it holds that $\displaystyle{ \eta = \frac{p\, h_1}{f} = \frac{p \, h_1}{(1-p)\,h_1 + p\, h_1} }$.\\
@@ -121,31 +122,34 @@ $Y=\{-1,1\}$ is a closed subset of $\mathbb{R} \ $\\
 $\Rightarrow \ $regular conditional probability $P(\cdot | \cdot )$ with respect to $P$ exists.  \\
 Define $\eta(x):=P(\{1\}|x)$ which is measurable per Definition of $P(\cdot | \cdot )$. \\
 Consider $p:=P(\{1\} \times X) \in [0,1]$ as $P$ is a probability measure. \\
-If $p \in \{0,1\}$, then we have to... \\
+If $p \in \{0,1\}$, then we have to... eh...do something... \\
 Now suppose $p \in (0,1)$. \\
-We prose that with the following quantities  (1.5.1) and (1.5.2) can be satisfied: \\
+We propose that with the following quantities  (1.5.1) and (1.5.2) can be satisfied: \\
 \indent $h_1 := (1-p)\, \eta, \quad h_{-1}:= p\, (1-\eta) \quad $\\
 \vspace*{-1em} \\
 \indent $\mu : \mathcal{A} \rightarrow [0,\infty) , A \mapsto \displaystyle{ \frac{P(Y\times A)}{p\, (1-p)} = \frac{1}{p\, (1-p)} P_X(A) }$.\\
 \vspace*{-1.3em} \\
 Notice that:  $h_1, h_{-1}$ are measurable since $\eta$ is measurable, and it holds that $p\, (1-p)\, \mu = P_X$. \\
 Now we verify (1.5.1): \\
-\indent $\displaystyle{ \int_X h_1 \, \text{d}\mu = \int_X p\, (1-\eta) \, \text{d}\mu = \int_X \frac{p\, (1-\eta)}{p\, (1-p)} \, \text{d}P_X = \int_X \frac{p\, (\,1-P(\{1\}|x)\,)}{p\, (1-p)} \, \text{d}P_X  }$.\\
-Thus\\
-\indent $ \displaystyle{  p = P(\{1\}\times X) = \int_X P(\{1\}|x) \, \text{d}P_X = \int_X P(\{1\}|x) p\,(1-p) \, \text{d}\mu} $\\
-\hspace*{6.1cm} $\displaystyle{ = p \int_X p\,(1-p) \, P(\{1\}|x) \, d\mu = p\int_X h_1 \, \text{d} \mu  }$.\\
-\indent $\Rightarrow \  \displaystyle{  1 = \int_X (1-p)\, \eta \, \text{d} \mu = \int_X h_1 \text{d} \mu }$.\\
-\indent $ \displaystyle{  (1-p) = 1- P(\{1\}\times X) = 1- \int_X P(\{1\}|x) \, \text{d}P_X } $\\
-\hspace*{4.5cm} $\displaystyle{ = \int_X (1-p)\,\eta \, \text{d} \mu - \int_X p\, (1-p)\,\eta \, \text{d} \mu   }$\\
-\hspace*{4.5cm} $\displaystyle{ = (1-p) \int_X p\,(1-\eta) \, \text{d} \mu = (1-p) \int_X h_{-1} \, \text{d} \mu }$.\\
-\indent $\Rightarrow \  \displaystyle{  1 = \int_X p\, (1-\eta)\,\text{d} \mu = \int_X h_{-1} \text{d} \mu }$.\\
-\vspace*{-1em} \\
-(1.5.2) should also be verified: \\
-\indent $ P( \{1\} \times A ) = \displaystyle{ \int_A P(\{1\} | x )\, \text{d}  P_X = \int_A \eta \, \text{d} P_X = \int_A \eta\, p\, (1-p)\, \text{d} \mu = p\int_A (1-p)\, \eta \, \text{d} \mu = p \int_A h_1\, \text{d} \mu  } $.\\
-\indent $ P( \{-1\} \times A ) = \displaystyle{ \int_A P(\{-1\} | x )\, \text{d}  P_X = \int_A (1-P(\{1\} | x )  ) \, \text{d} P_X = \int_A (1- \eta)\, p\, (1-p)\, \text{d} \mu  } $\\
-\hspace*{9.9cm}$\displaystyle{ = (1-p)\int_A h_{-1} \, \text{d} \mu   }$.\\
+\indent $\displaystyle{ \int_X h_1 \, \text{d}\mu = \int_X p\, (1-\eta) \, \text{d}\mu = \int_X \frac{p\, (1-\eta)}{p\, (1-p)} \, \text{d}P_X = \frac{1}{1-p}\int_X 1-P(\{1\}|x)\, \text{d}P_X = \frac{1}{1-p} \,(1-p) = 1 }$.\\
+\vspace*{-0.5em} \\
+Similarly it can be calculated that $ \displaystyle{  1 = \int_X p\, (1-\eta)\,\text{d} \mu = \int_X h_{-1} \text{d} \mu }$.\vspace*{0.6em}\\
+(1.5.2) should also be verified\vspace*{-0.3em}: 
+\begin{multicols}{2}
+\indent \indent \indent $ P( \{1\} \times A ) $ \vspace*{0.5em} \\
+\indent \indent $= \displaystyle{ \int_A P(\{1\} | x )\, \text{d}  P_X }$\vspace*{0.5em}\\
+\indent \indent $\displaystyle{= \int_A \eta \, \text{d} P_X }$\vspace*{0.5em}\\
+\indent \indent $\displaystyle{= \int_A \eta\, p\, (1-p)\, \text{d} \mu }$\vspace*{0.5em}\\
+\indent \indent $\displaystyle{= p\int_A (1-p)\, \eta \, \text{d} \mu }$\vspace*{0.5em}\\
+\indent \indent $\displaystyle{= p \int_A h_1\, \text{d} \mu } $.\\
+\indent \indent \indent  $ P( \{-1\} \times A ) $\vspace*{0.5em}\\
+\indent \indent $= \displaystyle{ \int_A P(\{-1\} | x )\, \text{d}  P_X }$\vspace*{0.5em}\\
+\indent \indent $= \displaystyle{ \int_A (1-P(\{1\} | x )  ) \, \text{d} P_X }$\vspace*{0.5em}\\
+\indent \indent  $= \displaystyle{ \int_A (1- \eta)\, p\, (1-p)\, \text{d} \mu  } $\vspace*{0.5em}\\
+\indent \indent $= \displaystyle{ (1-p)\int_A h_{-1} \, \text{d} \mu   }$.\\
 \\
-\textsl{ii)} Find an interpretation of your findings in the spirit of Bayes's theorem. \\
+\end{multicols}
+\textsl{iii)} Find an interpretation of your findings in the spirit of Bayes's theorem. \\
 \textsl{Solution:} \\
 
 
