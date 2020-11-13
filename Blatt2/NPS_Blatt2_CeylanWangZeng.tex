@@ -122,7 +122,9 @@ $Y=\{-1,1\}$ is a closed subset of $\mathbb{R} \ $\\
 $\Rightarrow \ $regular conditional probability $P(\cdot | \cdot )$ with respect to $P$ exists.  \\
 Define $\eta(x):=P(\{1\}|x)$ which is measurable per Definition of $P(\cdot | \cdot )$. \\
 Consider $p:=P(\{1\} \times X) \in [0,1]$ as $P$ is a probability measure. \\
-If $p \in \{0,1\}$, then we have to... eh...do something... \\
+We firstly consider $p \in \{0,1\}$, and without lost of generality, we consider $p = 1$. \\
+In this case, we can choose $\mu: = P_X,\; h_1 = h_{-1} := 1 \;$ the constant function on $X$.\\
+It is then easy to calculate, that (1.5.1) and (1.5.2) will be satisfied under this choice.\\
 Now suppose $p \in (0,1)$. \\
 We propose that with the following quantities  (1.5.1) and (1.5.2) can be satisfied: \\
 \indent $h_1 := (1-p)\, \eta, \quad h_{-1}:= p\, (1-\eta) \quad $\\
@@ -147,10 +149,16 @@ Similarly it can be calculated that $ \displaystyle{  1 = \int_X p\, (1-\eta)\,\
 \indent \indent $= \displaystyle{ \int_A (1-P(\{1\} | x )  ) \, \text{d} P_X }$\vspace*{0.5em}\\
 \indent \indent  $= \displaystyle{ \int_A (1- \eta)\, p\, (1-p)\, \text{d} \mu  } $\vspace*{0.5em}\\
 \indent \indent $= \displaystyle{ (1-p)\int_A h_{-1} \, \text{d} \mu   }$.\\
-\\
 \end{multicols}
-\textsl{iii)} Find an interpretation of your findings in the spirit of Bayes's theorem. \\
-\textsl{Solution:}   \\
 
-
+\noindent\textsl{iii)} Find an interpretation of your findings in the spirit of Bayes's theorem. \\
+\textsl{Solution:}\\
+Let P an arbitrary distribution on $X \times Y$ and  $x_0 \in X$ an arbitrary element.\\ 
+$(A_n)_{n \in \mathbb{N}}$ is a sequence of monotonous decreasing subsets in $X$, with $x_0 \in A_n$ for all $n \in \mathbb{N}$.\\ 
+According to Bayes's theorem we'll have the equation: \[P(\{y=1\} |\; x \in A_n ) = \frac{P( \{ y = 1\} \cap \{x \in A_n \})}{P(\{x \in A_n\})} \overset{def.}{=} \frac{P(\{1\} \times A_n)}{P_X(A_n)} \]
+Now, we insert (1.5.1) and (1.5.2) into this equation and receive:
+\[P(\{y=1\} |\; x \in A_n ) = \frac{ p \displaystyle{\int_A h_{1} \, \text{d}\mu }}{p \displaystyle{\int_A h_{1} \, \text{d}\mu + (1-p)\displaystyle{\int_A h_{-1} \, \text{d}\mu }}} \] 
+By taking the limit of $A_n$ to $\{x_0\}$, we will have (stimmt das???)
+\[\eta(x_0)=P(\{1\}|x_0) = \frac{p \, h_1(x_0)}{(1-p)\,h_1(x_0) + p\, h_1(x_0)}.\]
+It is also the relationship we find in part i).
 \end{document}
