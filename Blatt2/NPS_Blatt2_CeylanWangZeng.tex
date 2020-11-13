@@ -23,8 +23,7 @@
 \begin{document}
 \maketitle
 \section*{Exercise 1.1}
-Let $(X, \mathcal{A})$ be a measurable space, $Y := \{-1,1\}$, and $P$ be a distribution on $X \times Y$. Define $\eta: X \rightarrow [0,1]$ by $\eta(x) := P(\{1\}|x)$ for all $x \in X$.\\
- \\
+Let $(X, \mathcal{A})$ be a measurable space, $Y := \{-1,1\}$, and $P$ be a distribution on $X \times Y$. Define $\eta: X \rightarrow [0,1]$ by $\eta(x) := P(\{1\}|x)$ for all $x \in X$.\vspace{0.7em}\\
 \textsl{i)} Use $\eta$ to determine the Bayes risk and all Bayes decision functions for the binary classification loss $L_\text{class}:Y \rightarrow [0,\infty )$.\vspace{0.5em}\\
 \textsl{Solution:} \\
 Basic assumptions:\\
@@ -33,29 +32,29 @@ We have regular conditional probability $P(\cdot|x)$ met the following condition
 \indent 2) $x \mapsto P(B|x)$ is measurable for $B = \{1\}$ or $B = \{-1\}$ \\
 \indent 3) $P(A \times B) = \displaystyle{ \int_{A} P(B|x)\, \text{d}P_X  }$\\
  \\
-Since the prediction $t \in \{0,1,-1\}$, we define $\tilde{t}:= \text{sign}(t)$ with sign$(0) = 1$ to simplify the expression. \\
+Since the prediction $t \in \{0,1,-1\}$ or actually should it be $t \in \mathbb{R}$, we define $\tilde{t}:= \text{sign}(t)$ with sign$(0) = 1$ to simplify the expression. \\
 Now we look for our $C^*_{L,p}(x):= \inf_{\tilde{t}\in \{-1,1\}}\{\displaystyle{ \int_{Y} L_\text{class}(y,\tilde{t})\, P(\text{d}y|x)} \}$.  
 \begin{align*}
 \displaystyle{ \int_{Y} L_\text{class}(y,\tilde{t})\, P(\text{d}y|x) }
- & = \displaystyle{ \int_{Y} \mathbbm{1}_{(0,\infty]}(y\cdot\tilde{t}) P(\text{d}y|x)} \\
- & = 1 \cdot P(y\cdot\tilde{t} \leq 0 | x) =  \begin{cases} P(\{1\}|x) = \eta(x), &\tilde{t}(x) = -1 \cr  P(\{-1\}|x) = 1- \eta(x), &\tilde{t}(x) = 1 \end{cases}.
+ & = \displaystyle{ \int_{Y} \mathbbm{1}_{(\infty,0]}(y\cdot\tilde{t}) P(\text{d}y|x)} \\
+ & = 1 \cdot P(y\cdot\tilde{t} \leq 0 | x) =  \begin{cases} P(\{y=1\}|x) = \eta(x), &\tilde{t}(x) = -1 \cr  P(\{y=-1\}|x) = 1- \eta(x), &\tilde{t}(x) = 1 \end{cases}.
 \end{align*}
-To minimize our integral in $\tilde{t}$ for a given $x$, we just need to compare $\eta(x)$ with $1 - \eta(x)$. More precisely, we make the following choice:\\
-When $\eta(x) \geq 1-\eta(x) \; \Leftrightarrow \; \eta(x) \geq \frac{1}{2}$, we choose $\tilde{t}(x) = 1$,\\
-When $\eta(x) < 1-\eta(x) \;\Leftrightarrow\; \eta(x) < \frac{1}{2}$, we choose $\tilde{t}(x) = -1$\\
+To minimize our integral in $\tilde{t}$ for a given $x$, we just need to compare $\eta(x)$ with $1 - \eta(x)$. More precisely, we make the following choices for an $x\in X$:\\
+When $\eta(x) \geq 1-\eta(x) \; \Leftrightarrow \; \eta(x) \geq \frac{1}{2}$, we choose $\tilde{t}(x) := 1$,\\
+When $\eta(x) < 1-\eta(x) \;\Leftrightarrow\; \eta(x) < \frac{1}{2}$, we choose $\tilde{t}(x) := -1$.\\
 Now consider all $x\in X$. The target function $t^*$, according to the algorithm above, should be:
 \begin{align*}
 t^*(x) = \begin{cases} 1, &\eta(x) \geq \frac{1}{2} \cr -1, &\eta(x) < \frac{1}{2} \end{cases} 
 \indent = \; \mathbbm{1}_{\{\eta \geq \frac{1}{2}\}} - \mathbbm{1}_{\{\eta < \frac{1}{2}\}}.
 \end{align*}
-$\Rightarrow \;\; C^*_{L,p}(x) = \displaystyle{ \int_{Y} \mathbbm{1}_{(0,\infty]}(y\cdot t^*(x)) P(\text{d}y|x)} =  1 \cdot P(y\cdot t^*(x) \leq 0 | x) = \min \{ \eta(x), 1-\eta(x) \}\;\; P_X\text{-almost surely}.$
-According to (1.2.8), all functions which satisfy the equation above is a Bayes decision function.\\
+$\Rightarrow \;\; C^*_{L,p}(x) = \displaystyle{ \int_{Y} \mathbbm{1}_{(0,\infty]}(y\cdot t^*(x)) P(\text{d}y|x)} =  1 \cdot P(y\cdot t^*(x) \leq 0 | x) = \min \{ \eta(x), 1-\eta(x) \}\;\; P_X\text{-almost surely}.$\vspace{0.05em}\\
+According to (1.2.9), all functions satisfying the equation above are Bayes decision functions $P_X\text{-almost surely}.$.\\
 Now we compute the Bayes Risk:\\
-$R^*_{L,P} =  \displaystyle{ \int_{X} C^*_{L,p}(x) \text{d}P_X = \int_{\{\eta(x)\geq \frac{1}{2}\}}(1-\eta(x)) \text{d}P_X + \int_{\{\eta(x) < \frac{1}{2}\}}\eta(x) \text{d}P_X } $.\\
+$R^*_{L,P} =  \displaystyle{ \int_{X} C^*_{L,p}(x)\, \text{d}P_X(x) = \int_{\{\eta(x)\geq \frac{1}{2}\}}(1-\eta(x))\, \text{d}P_X(x) + \int_{\{\eta(x) < \frac{1}{2}\}}\eta(x)\, \text{d}P_X(x) } $.\\
  \\
 \textsl{ii)} Given a so-called weight parameter $\alpha \in (0,1)$ and consider the $\alpha$-weighted binary classification loss $L_{\text{class},\alpha} : Y \times \mathbb{R} \rightarrow [0,\infty)$ defined by:
 \begin{align*}
-L_{\text{class},\alpha} = \begin{cases} 1-\alpha, & y=1 \land t<0 \cr \alpha, & y=-1 \land t\geq 0 \cr 0, &\text{otherwise} \end{cases} .
+L_{\text{class},\alpha} = \begin{cases} 1-\alpha, & y=1 \land t<0 \cr \alpha, & y=-1 \land t\geq 0 \cr 0, &\text{otherwise}. \end{cases} .
 \end{align*}
 Determine the corresponding Bayes risk and Bayes decision functions and compare your findings to part i).
 \vspace{0.5em}\\
@@ -63,7 +62,7 @@ Determine the corresponding Bayes risk and Bayes decision functions and compare 
 Analogously to part i), we want to minimize the average loss in $t$ according to $P($d$y|x)$ for every given $x \in X$. In the second case, 
 \begin{align*}
 \displaystyle{ \int_{Y} L_{\text{class},\alpha}(y,\tilde{t})\, P(\text{d}y|x) }
- & = \begin{cases} (1-\alpha)\cdot P(\{1\}|x) = (1-\alpha)\cdot \eta(x), &\tilde{t}(x) = -1 \cr  \alpha \cdot P(\{-1\}|x) = \alpha \cdot (1- \eta(x)), &\tilde{t}(x) = 1 \end{cases}.
+ & = \begin{cases} (1-\alpha)\cdot P(\{y=1\}|x) = (1-\alpha)\cdot \eta(x), &\tilde{t}(x) = -1 \cr  \alpha \cdot P(\{y=-1\}|x) = \alpha \cdot (1- \eta(x)), &\tilde{t}(x) = 1. \end{cases}.
 \end{align*}
 And we make the following choice:\\
 When $(1-\alpha)\eta(x) \geq \alpha(1-\eta(x)) \Leftrightarrow \eta(x) \geq \alpha$, we choose $\tilde{t}(x) = 1$,\\
@@ -74,9 +73,11 @@ t^*(x) = \begin{cases} 1, &\eta(x) \geq \alpha \cr -1, &\eta(x) < \alpha \end{ca
 \indent = \; \mathbbm{1}_{\{\eta \geq \alpha\}} - \mathbbm{1}_{\{\eta < \alpha\}}.
 \end{align*}
 $\Rightarrow \;\; C^*_{L,p}(x) = \displaystyle{ \int_{Y}  L_{\text{class},\alpha}(y,t^*)\,  P(\text{d}y|x)} \;=\; \min \{ (1-\alpha)\eta(x), \alpha(1-\eta(x)) \}\;\; P_X\text{-almost surely}.$\\
-According to (1.2.8), all functions which satisfy the equation of integral above is a Bayes decision function.\\
+\vspace*{-1em}\\
+According to (1.2.8) all functions satisfying the equation of integral above are  Bayes decision functions.\\
 Now we compute the Bayes Risk:\\
-$R^*_{L,P} =  \displaystyle{ \int_{X} C^*_{L,p}(x) \text{d}P_X = \int_{\{\eta(x)\geq \alpha\}}\alpha(1-\eta(x)) \text{d}P_X + \int_{\{\eta(x) < \alpha\}} (1-\alpha)\eta(x) \text{d}P_X } $.\\
+\vspace*{-1em}\\
+$R^*_{L,P} =  \displaystyle{ \int_{X} C^*_{L,p}(x)\, \text{d}P_X = \int_{\{\eta(x)\geq \alpha\}}\alpha(1-\eta(x))\, \text{d}P_X + \int_{\{\eta(x) < \alpha\}} (1-\alpha)\eta(x)\, \text{d}P_X } $.\\
  \\
 
 \newpage
@@ -89,7 +90,7 @@ Let $(X,\mathcal{A})$ be a measurable space, $\mu$ be a $\sigma$-finite measure 
 For a given $p\in [0,1]$ and $Y:= \{ -1,1 \}$ consider the distribution $P$ on $X \times Y$ that is uniquely determined by 
 \begin{align*}
 P(\{ y \} \times A) := 
- & = \begin{cases} 
+ & \begin{cases} 
  (1-p)\displaystyle{\int_A h_{-1} \, \text{d}\mu }, & y = -1 \cr  
  p \displaystyle{\int_A h_{1} \, \text{d}\mu }, &y = 1 
 \end{cases}. \tag{1.5.2}
