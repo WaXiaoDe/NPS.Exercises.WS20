@@ -1,0 +1,105 @@
+\documentclass{article}
+
+\usepackage[utf8]{inputenc}
+\usepackage[ngerman]{babel}
+\usepackage[T1]{fontenc}
+
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{amsthm}
+\usepackage{bbm}
+
+\usepackage{geometry}
+\geometry{a4paper,left=3cm,right=3cm,top=2.5cm,bottom=2.5cm}
+
+\renewcommand{\baselinestretch}{1.45} 
+\usepackage{setspace}
+
+\usepackage{multicol}
+
+
+\title{Non-Paramatric Statistics Exercise 3}
+\author{Osman Ceylan, Jiahui Wang, Zhuoyao Zeng}
+\date{\today}
+
+\begin{document}
+\maketitle
+\section*{Exercise 1.5}
+Let $(X,\mathcal{A})$ be a measurable space and $\mu$ be a probability measure on $X$. Moreover, let $\mathbf{P}$ be a probability measure on X that has a $\mu$-density $h: X \rightarrow [0,\infty)$, and let $L_{\text{dens}}: X \times \mathbb{R} \rightarrow [0,\infty)$ be the corresponding loss function. Compute the excess $L_{\text{dens}}$-risks for both $\mathbf{P}$ and $\mu$. Which one is better suited for capturing the intuitive goal of density estimation? \\
+\textit{Solution: }\\
+$h$ is a $\mu$-density of $\mathbf{P} \ \Rightarrow \  \forall A\in \mathcal{A}: \mathbf{P}(A) = \displaystyle{\int_A h \, \text{d}\mu}$.\\
+\vspace*{-1.3em}\\
+Recall from  lecture: $\forall x\in X, t\in \mathbb{R}: L_{\text{dens}}(x,t) = |h(x)-t|$.\\
+$\forall x\in X:  L_{\text{dens}}(x,h(x)) =  0 \ \Rightarrow \  $ The Bayes Risk of $L_{\text{dens}}$ related to any measure of X is 0. \hspace{2em}$(*)$\\
+Suppose now we have an estimated density $h'$ of $h$.\\
+\vspace*{-1.5em}\\
+This means that: $h'\geq 0 \ \land \ \displaystyle{\int_X h' \, \text{d}\mu = 1} \ \land \ \forall A\in \mathcal{A}:\mathbf{P}'(A):= \displaystyle{\int_A h' \, \text{d}\mu } $.\\
+\vspace*{-1.3em}\\
+As the excess $L_{\text{dens}}$-risks of $\mu$, we obtain:
+\begin{spacing}{1.8} \vspace*{-1.3cm}
+\begin{align*}
+\mathcal{R}_{L_{\text{dens}},\mu}(h')-\mathcal{R}_{L_{\text{dens}},\mu}^* & \overset{(*)}{=} \mathcal{R}_{L_{\text{dens}},\mu}(h') \\
+& \overset{\text{Def.}}{=}  \displaystyle{ \int_X L_{\text{dens}}(x,h'(x)) \,  \text{d}\mu(x) } \\
+& =  \displaystyle{ \int_X |h-h'| \,  \text{d}\mu } \\
+& =  \displaystyle{ \int_{ \{h'\geq h\} } h'-h \,  \text{d}\mu \ + \int_{ \{ h'< h \} } h-h' \,  \text{d}\mu } \\
+& =  \displaystyle{ \int_{ \{h'\geq h\} } h' \,  \text{d}\mu \ - \int_{ \{h'\geq h\} } h \,  \text{d}\mu \ + \int_{ \{ h'< h \} } h \,  \text{d}\mu \ -  \int_{ \{ h'< h \} } h' \,  \text{d}\mu } \\
+& =  \mathbf{P} '(\{h'\geq h\}  ) - \mathbf{P} (\{h'\geq h\}  ) + \mathbf{P} '(\{h'< h\}  ) - \mathbf{P} (\{h'< h\}  )   \\
+& =  \mathbf{P} '(\{h'\geq h\}  ) - \mathbf{P} (\{h'\geq h\}  ) + (\,1-\mathbf{P} '(\{h'\geq h\}  )\,) - (\,1-\mathbf{P} (\{h'\geq h\}  )\,)   \\
+& =  2\mathbf{P} '(\{h'\geq h\}  ) - 2\mathbf{P} (\{h'\geq h\}  )\\
+& =  2(\, \mathbf{P} '(\{h'\geq h\}  - \mathbf{P} (\{h'\geq h\}  ) \, ).
+\end{align*}
+\end{spacing}
+\vspace*{1cm} \textit{Continuing in next page...} \\
+As the excess $L_{\text{dens}}$-risks of $\mathbf{P}$, we obtain:
+\begin{spacing}{1.8} \vspace*{-1.3cm}
+\begin{align*}
+\mathcal{R}_{L_{\text{dens}},\mathbf{P}}(h')-\mathcal{R}_{L_{\text{dens}},\mathbf{P}}^* & \overset{(*)}{=} \mathcal{R}_{L_{\text{dens}},\mathbf{P}}(h') \\
+& \overset{\text{Def.}}{=}  \displaystyle{ \int_X L_{\text{dens}}(x,h'(x)) \,  \text{d}\mathbf{P}(x) } \\
+& =  \displaystyle{ \int_X |h-h'| \,  \text{d}\mathbf{P} } \\
+& =  \displaystyle{ \int_{ \{h'\geq h\} } h'-h \,  \text{d}\mathbf{P} \ + \int_{ \{ h'< h \} } h-h' \,  \text{d}\mathbf{P} } \\
+& =  \displaystyle{ \int_{ \{h'\geq h\} } h' \,  \text{d}\mathbf{P} \ - \int_{ \{h'\geq h\} } h \,  \text{d}\mathbf{P} \ + \int_{ \{ h'< h \} } h \,  \text{d}\mathbf{P} \ -  \int_{ \{ h'< h \} } h' \,  \text{d}\mathbf{P} } \\
+& =  \displaystyle{ \int_{ \{h'\geq h\} } h' \hspace{-0.2em} \cdot h \,  \text{d}\mu \ - \int_{ \{h'\geq h\} } h^2 \,  \text{d}\mu \ + \int_{ \{ h'< h \} } h^2 \,  \text{d}\mu \ -  \int_{ \{ h'< h \} } h' \hspace{-0.2em} \cdot h \,  \text{d}\mu } .
+\end{align*}
+\end{spacing}
+$\quad$\vspace*{-0.7cm}\\
+If our calculations are not wrong, we would say that the excess risk relating to $\mu$ should be more suitable for capturing the intuitive goal of density estimation. \\
+
+
+%\newpage
+
+
+\section*{Exercise 2.1}
+Let $X \neq \emptyset$ and $\mathfrak{A} = (A_j)_{j\in J}$ be an at most countable partition of $X$. Describe the space $\mathcal{L}_0(X)$ of measurable functions $X \rightarrow \mathbb{R}$ for the corresponding $\sigma$-algebra $\mathcal{A}:=\sigma (\mathfrak{A})$. \\
+\textit{Solution: }\\
+We construct $\Sigma:=\{ S \subseteq X | \exists I\subseteq J : S = \bigcup_{i\in I} A_i\} $.\\ 
+$\mathfrak{A} = (A_j)_{j\in J}$ is a countable partition of $X \ \Leftrightarrow \ X = \dot{\bigcup}_{j \in J} A_j$.\\
+$\Rightarrow \ $A simple verification of the axioms of $\sigma$-algebra shows that $\Sigma$ is a $\sigma$-algebra containing $\mathfrak{A}$. \\
+Meanwhile it is also easy to see that $\Sigma \subseteq \sigma(\mathfrak{A}) \ \Rightarrow \ \Sigma = \sigma(\mathfrak{A}) $.\hspace{5cm} $(i)$ \\
+Moreover, recall the following theorem from measure theory: \\ \vspace*{-2.5em}
+\begin{quote}
+Let $(\Omega_1, \mathcal{F}_1)$, $(\Omega_2, \mathcal{F}_2)$ be mesrable spaces and  $f:\Omega_1 \rightarrow \Omega_2$.\\
+Also let $(M_n)_{n\in \mathbb{N}}$ a sequence from $\mathcal{F}_1$ and at the same time a partition of $\Omega_1$. \\
+For $\forall n\in \mathbb{N} $ denote $\mathcal{F}_1 \; | \; M_n := \{ A\cap M_n | A\in \mathcal{F}_1 \}$. \\
+Then it holds that: $f$ is $\mathcal{F}_1$-$\mathcal{F}_2$-measurable$\ \Leftrightarrow \ $ $\forall n \in \mathbb{N}: f|_{M_n}$ is $\mathcal{F}_1 |M_n$-$\mathcal{F}_2$-measurable.\\
+\end{quote} \vspace*{-2.5em}
+$(A_j)_{j\in J}$ is paarwise disjoint $\ \Rightarrow \  \forall j\in J: \mathcal{A}|A_j = \{ \emptyset, A_j \}$.\\
+$\Rightarrow \ \forall j \in J\  \forall f \in \mathcal{L}_0(X):  f|_{A_j}^{-1}(\mathcal{B}) \in \mathcal{A}|A_j = \{ \emptyset, A_j \}  $. \hspace{6.5cm} $(ii)$\\
+We also know that $\mathcal{B} = \sigma(\mathcal{I}_{-\infty}^c)$ with $\mathcal{I}_{-\infty}^c =  \{ (-\infty, c \,] \;| \; c\in \mathbb{R}  \}\;$. \hspace{4.4cm} $(iii)$\\
+Combining all considerations , we conclude that: \vspace*{-0.5em}
+\begin{align}
+\noindent \notag \mathcal{L}_0(X) &\overset{\text{Def}}{=} \{ f:X \rightarrow \mathbb{R} \; | \; f^{-1}(\mathcal{B}) \subseteq \mathcal{A} \}\\
+\notag & \overset{ (i) }{=} \{ f:X \rightarrow \mathbb{R} \; | \; \forall B \in \mathcal{B} \;\exists I_B \subseteq J:  f^{-1}(B) = \textstyle{\bigcup_{i \in I_B} } A_i \}\\
+\notag & \overset{ (ii) }{=} \{ f:X \rightarrow \mathbb{R} \; | \; \forall j \in J : f|_{A_j}^{-1}(\mathcal{B}) = \emptyset \; \lor \;  f|_{A_j}^{-1}(\mathcal{B}) = A_j \}\\
+\notag & \overset{ (iii) }{=} \{ f:X \rightarrow \mathbb{R} \; | \; \forall j \in J \; \forall c\in \mathbb{R} : f|_{A_j}^{-1}(\; (-\infty, c\, ]  \;) = \emptyset \; \lor \;  f|_{A_j}^{-1}(\; (-\infty, c\, ]  \;) = A_j \}.\\
+\notag 
+\end{align}
+
+
+
+
+
+
+
+
+
+\end{document}

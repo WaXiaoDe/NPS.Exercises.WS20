@@ -16,7 +16,7 @@
 
 \renewcommand{\baselinestretch}{1.45} 
 
-\title{Non-Paramatic Statistic Sheet 2}
+\title{Non-Paramatric Statistics Sheet 2}
 \author{Osman Ceylan, Jiahui Wang, Zhuoyao Zeng}
 \date{\today}
 
@@ -36,7 +36,7 @@ Since the prediction $t \in \{0,1,-1\}$ or actually should it be $t \in \mathbb{
 Now we look for our $C^*_{L,p}(x):= \inf_{\tilde{t}\in \{-1,1\}}\{\displaystyle{ \int_{Y} L_\text{class}(y,\tilde{t})\, P(\text{d}y|x)} \}$.  
 \begin{align*}
 \displaystyle{ \int_{Y} L_\text{class}(y,\tilde{t})\, P(\text{d}y|x) }
- & = \displaystyle{ \int_{Y} \mathbbm{1}_{(\infty,0]}(y\cdot\tilde{t}) P(\text{d}y|x)} \\
+ & = \displaystyle{ \int_{Y} \mathbbm{1}_{(-\infty,0]}(y\cdot\tilde{t}) P(\text{d}y|x)} \\
  & = 1 \cdot P(y\cdot\tilde{t} \leq 0 | x) =  \begin{cases} P(\{y=1\}|x) = \eta(x), &\tilde{t}(x) = -1 \cr  P(\{y=-1\}|x) = 1- \eta(x), &\tilde{t}(x) = 1 \end{cases}.
 \end{align*}
 To minimize our integral in $\tilde{t}$ for a given $x$, we just need to compare $\eta(x)$ with $1 - \eta(x)$. More precisely, we make the following choices for an $x\in X$:\\
@@ -111,13 +111,13 @@ For $\eta$ we consider the quantity $P(\{ 1\} \times A)$ along with the equality
 \vspace*{-1em} \\
 \indent $P(\{ 1\} \times A) \overset{1.2.3}{=} \displaystyle{ \int_{A} P({1}| x)\, \text{d}P_X(x) \overset{(*)}{=} \int_{A} P({1}| x)\, f(x)\, \text{d}\mu(x)  }  $.\vspace*{0.3em}\\
 Because of (1.5.2) and $\eta=P(\{ 1\}|x)$ we then have: $\displaystyle{ \int_{A} p\,h_1\, \text{d}\mu =\int_A \eta \, f \, \text{d}\mu  }$.\vspace*{0.1em}\\
-Particularly it holds that $\displaystyle{ \int_{X} p\,h_1\, \text{d}\mu =\int_X \eta \, f \, \text{d}\mu  }$.\vspace*{0.7em}\\
+Particularly it holds that $\displaystyle{ \int_{N} p\,h_1\, \text{d}\mu =\int_N \eta \, f \, \text{d}\mu  }$ with $N:=\{ x\in X\, | \, (p\,h_1)(x) \neq (\eta \, f)(x)    \}$.\vspace*{0.7em}\\
 $\Rightarrow \ $ For $\mu$-almost every $x\in X$ we have $\displaystyle{ p\ h_1 = \eta \, f } $. \\
 \vspace*{-1em} \\
-$\overset{(\#)}{\Rightarrow} \ $ For $\mu$-almost every $x\in X$ it holds that $\displaystyle{ \eta = \frac{p\, h_1}{f} = \frac{p \, h_1}{(1-p)\,h_1 + p\, h_1} }$.\\
-$(*)$ says that $P_X \ll \mu \ \Rightarrow \ $ For $P_X$-almost every $x\in X$ it holds that $\displaystyle{ \eta = \frac{p \, h_1}{(1-p)\,h_1 + p\, h_1} }$.\\
+$\overset{(\#)}{\Rightarrow} \ $ For $\mu$-almost every $x\in X$ it holds that $\displaystyle{ \eta = \frac{p\, h_{1}}{f} = \frac{p \, h_1}{(1-p)\,h_{-1} + p\, h_1} }$.\\
+$(*)$ says that $P_X \ll \mu \ \Rightarrow \ $ For $P_X$-almost every $x\in X$ it holds that $\displaystyle{ \eta = \frac{p \, h_1}{(1-p)\,h_{-1} + p\, h_1} }$.\\
 \\
-\textsl{ii)} Show that for all distributions $P$ on $X\times Y$ there exists $\mu, p$, and measurable $h_{-1}, h: X \rightarrow [0,\infty)$ with (1.5.1) such that (1.5.2) holds. \vspace{0.5em}\\
+\textsl{ii)} Show that for all distributions $P$ on $X\times Y$ there exists $\mu, p$, and measurable $h_{-1}, h_1: X \rightarrow [0,\infty)$ with (1.5.1) such that (1.5.2) holds. \vspace{0.5em}\\
 \textsl{Solution:} \\
 $Y=\{-1,1\}$ is a closed subset of $\mathbb{R} \ $\\
 $\Rightarrow \ $regular conditional probability $P(\cdot | \cdot )$ with respect to $P$ exists.  \\
@@ -160,6 +160,6 @@ According to Bayes's theorem we'll have the equation: \[P(\{y=1\} |\; x \in A_n 
 Now, we insert (1.5.1) and (1.5.2) into this equation and receive:
 \[P(\{y=1\} |\; x \in A_n ) = \frac{ p \displaystyle{\int_A h_{1} \, \text{d}\mu }}{p \displaystyle{\int_A h_{1} \, \text{d}\mu + (1-p)\displaystyle{\int_A h_{-1} \, \text{d}\mu }}} \] 
 By taking the limit of $A_n$ to $\{x_0\}$, we will have (stimmt das???)
-\[\eta(x_0)=P(\{1\}|x_0) = \frac{p \, h_1(x_0)}{(1-p)\,h_1(x_0) + p\, h_1(x_0)}.\]
+\[\eta(x_0)=P(\{1\}|x_0) = \frac{p \, h_1(x_0)}{(1-p)\,h_{-1}(x_0) + p\, h_1(x_0)}.\]
 It is also the relationship we find in part i).
 \end{document}
