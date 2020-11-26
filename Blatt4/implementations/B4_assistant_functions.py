@@ -45,17 +45,16 @@ def plot_binary_classified_data(X,Y):
     
 
 # Read the Data from a csv file 
-
 def read_csv(name):
     THIS_FOLDER = os.path.dirname(os.path.abspath(__file__))
     Path_csv = os.path.join(THIS_FOLDER, name)
     with open(Path_csv) as File:
         Data = csv.reader(File, delimiter=',')
         pointSet = []
+        # convert string in float
         for point in Data:
             for i in range(len(point)):
                 point[i] = float(point[i])
-            #pointSet.append([ point[0], np.array(point[1:]) ])
-            pointSet.append([ point[0], point[1:]])
+            pointSet.append(point)
     File.close()
     return pointSet
