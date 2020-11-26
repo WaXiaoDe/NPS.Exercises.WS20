@@ -18,69 +18,18 @@
 \usepackage{multicol}
 
 
-\title{Non-Paramatric Statistics Exercise 3}
+\title{Non-Paramatric Statistics Exercise 4}
 \author{Osman Ceylan, Jiahui Wang, Zhuoyao Zeng}
 \date{\today}
 
 \begin{document}
 \maketitle
-\section*{Exercise 1.5}
-Let $(X,\mathcal{A})$ be a measurable space and $\mu$ be a probability measure on $X$. Moreover, let $\mathbf{P}$ be a probability measure on X that has a $\mu$-density $h: X \rightarrow [0,\infty)$, and let $L_{\text{dens}}: X \times \mathbb{R} \rightarrow [0,\infty)$ be the corresponding loss function. Compute the excess $L_{\text{dens}}$-risks for both $\mathbf{P}$ and $\mu$. Which one is better suited for capturing the intuitive goal of density estimation? \\
+
+\section*{Exercise 2.3} \vspace*{-1em}
+Implement the histogram rule $h_{D,s}$ in an algorithm that only uses $O(n)$ spaces, where $n$ is the number of samples. Visualize the effect of different widths on the data sets of Exercise 2.2.\\
 \textit{Solution: }\\
-$h$ is a $\mu$-density of $\mathbf{P} \ \Rightarrow \  \forall A\in \mathcal{A}: \mathbf{P}(A) = \displaystyle{\int_A h \, \text{d}\mu}$.\\
-\vspace*{-1.3em}\\
-Recall from  lecture: $\forall x\in X, t\in \mathbb{R}: L_{\text{dens}}(x,t) = |h(x)-t|$.\\
-$\forall x\in X:  L_{\text{dens}}(x,h(x)) =  0 \ \Rightarrow \  $ The Bayes Risk of $L_{\text{dens}}$ related to any measure of X is 0. \hspace{2em}$(*)$\\
-Suppose now we have an estimated density $h'$ of $h$.\\
-\vspace*{-1.5em}\\
-This means that: $h'\geq 0 \ \land \ \displaystyle{\int_X h' \, \text{d}\mu = 1} \ \land \ \forall A\in \mathcal{A}:\mathbf{P}'(A):= \displaystyle{\int_A h' \, \text{d}\mu } $.\\
-\vspace*{-1.3em}\\
-As the excess $L_{\text{dens}}$-risks of $\mu$, we obtain:
-\begin{spacing}{1.8} \vspace*{-1.3cm}
-\begin{align*}
-\mathcal{R}_{L_{\text{dens}},\mu}(h')-\mathcal{R}_{L_{\text{dens}},\mu}^* & \overset{(*)}{=} \mathcal{R}_{L_{\text{dens}},\mu}(h') \overset{\text{Def.}}{=}  \displaystyle{ \int_X L_{\text{dens}}(x,h'(x)) \,  \text{d}\mu(x) }  =  \displaystyle{ \int_X |h-h'| \,  \text{d}\mu } 
-\end{align*}
-\end{spacing}
-$\quad$ \vspace*{-3em}\\
-As for the excess $L_{\text{dens}}$-risks of $\mathbf{P}$, we obtain:
-\begin{spacing}{1.8} \vspace*{-1.3cm}
-\begin{align*}
-\mathcal{R}_{L_{\text{dens}},\mathbf{P}}(h')-\mathcal{R}_{L_{\text{dens}},\mathbf{P}}^* & \overset{(*)}{=} \mathcal{R}_{L_{\text{dens}},\mathbf{P}}(h') \overset{\text{Def.}}{=}  \displaystyle{ \int_X L_{\text{dens}}(x,h'(x)) \,  \text{d}\mathbf{P}(x) }  =  \displaystyle{ \int_X |h-h'| \,  \text{d}\mathbf{P} } =  \displaystyle{ \int_X |h-h'| \, h \,  \text{d}\mu }.
-\end{align*}
-\end{spacing}
-$\quad$\vspace*{-0.7cm}\\
-The excess risk relating to $\mathbb{P} $is more suitable for capturing the intuitive goal of density estimation because we can see that compared with that of excess risk under $\mathbb{P}$, the integrand of excess risk under $\mu$ has an additional function $h$, and thus, the value of the integrand will be larger for $x\in X: h(x)>1$, and smaller for $x\in X: h(x)<1$. This means that the risk penalty for the part, where $h$ is "relatively large", is larger, and the risk penalty for the part, where $h$ is "relatively small", is then smaller.  \\
-
-
-\newpage
-
-
-\section*{Exercise 2.1}
-Let $X \neq \emptyset$ and $\mathfrak{A} = (A_j)_{j\in J}$ be an at most countable partition of $X$. Describe the space $\mathcal{L}_0(X)$ of measurable functions $X \rightarrow \mathbb{R}$ for the corresponding $\sigma$-algebra $\mathcal{A}:=\sigma (\mathfrak{A})$. \\
-\textit{Solution: }\\
-We construct $\Sigma:=\{ S \subseteq X | \exists I\subseteq J : S = \bigcup_{i\in I} A_i\} $.\\ 
-$\mathfrak{A} = (A_j)_{j\in J}$ is a countable partition of $X \ \Leftrightarrow \ X = \dot{\bigcup}_{j \in J} A_j$.\\
-$\Rightarrow \ $A simple verification of the axioms of $\sigma$-algebra shows that $\Sigma$ is a $\sigma$-algebra containing $\mathfrak{A}$. \\
-Meanwhile it is also easy to see that $\Sigma \subseteq \sigma(\mathfrak{A}) \ \Rightarrow \ \Sigma = \sigma(\mathfrak{A}) $.\hspace{5cm} $(i)$ \\
-Moreover, recall the following theorem from measure theory: \\ \vspace*{-2.5em}
-\begin{quote}
-Let $(\Omega_1, \mathcal{F}_1)$, $(\Omega_2, \mathcal{F}_2)$ be mesrable spaces and  $f:\Omega_1 \rightarrow \Omega_2$.\\
-Also let $(M_n)_{n\in \mathbb{N}}$ a sequence from $\mathcal{F}_1$ and at the same time a partition of $\Omega_1$. \\
-For $\forall n\in \mathbb{N} $ denote $\mathcal{F}_1 \; | \; M_n := \{ A\cap M_n | A\in \mathcal{F}_1 \}$. \\
-Then it holds that: $f$ is $\mathcal{F}_1$-$\mathcal{F}_2$-measurable$\ \Leftrightarrow \ $ $\forall n \in \mathbb{N}: f|_{M_n}$ is $\mathcal{F}_1 |M_n$-$\mathcal{F}_2$-measurable.\\
-\end{quote} \vspace*{-2.5em}
-$(A_j)_{j\in J}$ is paarwise disjoint $\ \Rightarrow \  \forall j\in J: \mathcal{A}|A_j = \{ \emptyset, A_j \}$.\\
-$\Rightarrow \ \forall j \in J\  \forall f \in \mathcal{L}_0(X):  f|_{A_j}^{-1}(\mathcal{B}) \in \mathcal{A}|A_j = \{ \emptyset, A_j \}  $. \hspace{6.5cm} $(ii)$\\
-We also know that $\forall c \in \mathbb{R}: \{c\} \in \mathcal{B}$.\\
-With $(ii)$ we can then deduce that $\forall j \in J\  \forall f \in \mathcal{L}_0(X):  f|_{A_j}^{-1}( \{ c \} ) \in  \{ \emptyset, A_j \}  $. \hspace{2.4cm} $(iii)$\\
-Combining all considerations , we conclude that: \vspace*{-0.5em}
-\begin{align}
-\noindent \notag \mathcal{L}_0(X) &\overset{\text{Def}}{=} \{ f:X \rightarrow \mathbb{R} \; | \; f^{-1}(\mathcal{B}) \subseteq \mathcal{A} \}\\
-\notag & \overset{ (i) }{=} \{ f:X \rightarrow \mathbb{R} \; | \; \forall B \in \mathcal{B} \;\exists I_B \subseteq J:  f^{-1}(B) = \textstyle{\bigcup_{i \in I_B} } A_i \}\\
-\notag & \overset{ (ii) }{=} \{ f:X \rightarrow \mathbb{R} \; | \; \forall j \in J : f|_{A_j}^{-1}(\mathcal{B}) = \emptyset \; \lor \;  f|_{A_j}^{-1}(\mathcal{B}) = A_j \}\\
-\notag & \overset{ (iii) }{=} \{ f:X \rightarrow \mathbb{R} \; |  \, f = \sum_{i \in I} c_i \mathbbm{1}_{A_i}  \}.\\
-\notag 
-\end{align}
+For each distribution in Exercise 2.2, we have generated 10,000 samples.\\ 
+Specifically, the 3 normal distributions we chose in Exercise 2.2 $i)$ have following properties: \\
 
 
 
