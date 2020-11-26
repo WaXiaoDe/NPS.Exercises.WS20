@@ -42,8 +42,9 @@ def Histrogram(data,grid_length,origin=(0,0),plot=False):
         value_list.append(point_in_grid[position])
 
     if plot:
-        size = 10
-        _, ax = plt.subplots(figsize=(size,size), dpi=100)
+        size = 9
+        fig, ax = plt.subplots()
+        fig.set_size_inches(size, size)
         xmin = min(position_list_X)
         xmax = max(position_list_X)
         ymin = min(position_list_Y)
@@ -56,12 +57,11 @@ def Histrogram(data,grid_length,origin=(0,0),plot=False):
         plt.xlim(lmin,lmax)
         plt.ylim(lmin,lmax)
         cmap = cm.get_cmap('ocean', 256)
-        a = ax.scatter(position_list_X, position_list_Y, marker='s',cmap=cmap.reversed(), c=value_list,s=(grid_length*size*72*0.58/lrange)**2,alpha=0.8)
+        a = ax.scatter(position_list_X, position_list_Y, marker='s',cmap=cmap.reversed(), c=value_list,s=(grid_length*size*72*0.58/lrange)**2,alpha=0.85)
         plt.title("Histrogram for A2.2({}),  n = {}, s = {}".format(data,sample_size,grid_length))
         plt.colorbar(a)
-        plt.savefig(name + "-s"+str(grid_length)+'.png',dpi=600,format='png')
+        #plt.savefig(name + "-s"+str(grid_length)+'.eps',dpi = fig.dpi)
         plt.show()
-    
     return point_in_grid
 
 
@@ -69,10 +69,11 @@ def Histrogram(data,grid_length,origin=(0,0),plot=False):
 
 # Parameters
 origin = (0,0)
-#grid_length = 0.03
-#data = 'ii'
-grid_length = 0.3
+grid_length = 5
 data = 'i'
+#grid_length = 0.04
+#data = 'ii'
+
 
 Histrogram(data,grid_length,origin,plot=True)
 
