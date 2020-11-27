@@ -3,7 +3,7 @@ import math
 import B4_assistant_functions as af
 import matplotlib.pyplot as plt
 import matplotlib
-from matplotlib import cm 
+from matplotlib import cm, colors
 
 
 def PositionFinding(point,origin,grid_length):
@@ -18,7 +18,7 @@ def PositionFinding(point,origin,grid_length):
 def Histrogram(data,grid_length,origin=(0,0),plot=False):
 
     # Preparation
-    name = 'Exercise2.2_'+data+'-10000'
+    name = 'Exercise2.2_'+data+'-30000'
     point_list = af.read_csv(name +'.csv')
     point_in_grid = {}
     sample_size = len(point_list)
@@ -57,7 +57,9 @@ def Histrogram(data,grid_length,origin=(0,0),plot=False):
         plt.xlim(lmin,lmax)
         plt.ylim(lmin,lmax)
         cmap = cm.get_cmap('ocean', 256)
-        a = ax.scatter(position_list_X, position_list_Y, marker='s',cmap=cmap.reversed(), c=value_list,s=(grid_length*size*72*0.58/lrange)**2,alpha=0.85)
+        newcolors = cmap(np.linspace(0, 1, 300))[:256]
+        newcmp = colors.ListedColormap(newcolors)
+        a = ax.scatter(position_list_X, position_list_Y, marker='s',cmap=newcmp.reversed(), c=value_list,s=(grid_length*size*72*0.58/lrange)**2,alpha=0.85)
         plt.title("Histrogram for A2.2({}),  n = {}, s = {}".format(data,sample_size,grid_length))
         plt.colorbar(a)
         #plt.savefig(name + "-s"+str(grid_length)+'.eps',dpi = fig.dpi)
@@ -69,10 +71,10 @@ def Histrogram(data,grid_length,origin=(0,0),plot=False):
 
 # Parameters
 origin = (0,0)
-grid_length = 5
-data = 'i'
-#grid_length = 0.04
-#data = 'ii'
+#grid_length = 3
+#data = 'i'
+grid_length = 0.2
+data = 'ii'
 
 
 Histrogram(data,grid_length,origin,plot=True)
