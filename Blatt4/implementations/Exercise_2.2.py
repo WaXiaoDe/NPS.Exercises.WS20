@@ -69,5 +69,5 @@ size = 10000
 
 distr1 = [ [ 0 , np.e ] , [ [1,0.5] , [0.5 , 2]  ]  ]
 distr2 = [ [ np.pi , 1 ] , [ [np.log(3),0] , [0 , 5]  ]  ]
-distr3 = [ [ -2 , 4 ] , [ [np.log(np.log(size)),9] , [9 , 6.6666]  ]  ]
+distr3 = [ [ -2 , 4 ] , [ [np.log(np.log(size)),2] , [2 , 6.6666]  ]  ]
 MixingThreeNormalDistr( size , distr1, distr2, distr3 , plot = False , output = True )
