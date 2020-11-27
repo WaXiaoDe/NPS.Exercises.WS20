@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018) (preloaded format=pdflatex 2019.3.14)  27 NOV 2020 02:04
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018) (preloaded format=pdflatex 2019.3.14)  27 NOV 2020 04:01
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -228,21 +228,96 @@ Package: multicol 2018/04/01 v1.8r multicolumn formatting (FMi)
 \colbreak@box=\box53
 \mc@col@check@num=\count113
 )
+(/usr/local/texlive/2018/texmf-dist/tex/latex/graphics/graphicx.sty
+Package: graphicx 2017/06/01 v1.1a Enhanced LaTeX Graphics (DPC,SPQR)
+
+(/usr/local/texlive/2018/texmf-dist/tex/latex/graphics/graphics.sty
+Package: graphics 2017/06/25 v1.2c Standard LaTeX Graphics (DPC,SPQR)
+
+(/usr/local/texlive/2018/texmf-dist/tex/latex/graphics/trig.sty
+Package: trig 2016/01/03 v1.10 sin cos tan (DPC)
+)
+(/usr/local/texlive/2018/texmf-dist/tex/latex/graphics-cfg/graphics.cfg
+File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
+)
+Package graphics Info: Driver file: pdftex.def on input line 99.
+
+(/usr/local/texlive/2018/texmf-dist/tex/latex/graphics-def/pdftex.def
+File: pdftex.def 2018/01/08 v1.0l Graphics/color driver for pdftex
+))
+\Gin@req@height=\dimen130
+\Gin@req@width=\dimen131
+)
+(/usr/local/texlive/2018/texmf-dist/tex/latex/oberdiek/epstopdf.sty
+Package: epstopdf 2016/05/15 v2.6 Conversion with epstopdf on the fly (HO)
+
+(/usr/local/texlive/2018/texmf-dist/tex/latex/oberdiek/epstopdf-base.sty
+Package: epstopdf-base 2016/05/15 v2.6 Base part for package epstopdf
+
+(/usr/local/texlive/2018/texmf-dist/tex/generic/oberdiek/infwarerr.sty
+Package: infwarerr 2016/05/16 v1.4 Providing info/warning/error messages (HO)
+)
+(/usr/local/texlive/2018/texmf-dist/tex/latex/oberdiek/grfext.sty
+Package: grfext 2016/05/16 v1.2 Manage graphics extensions (HO)
+
+(/usr/local/texlive/2018/texmf-dist/tex/generic/oberdiek/kvdefinekeys.sty
+Package: kvdefinekeys 2016/05/16 v1.4 Define keys (HO)
+
+(/usr/local/texlive/2018/texmf-dist/tex/generic/oberdiek/ltxcmds.sty
+Package: ltxcmds 2016/05/16 v1.23 LaTeX kernel commands for general use (HO)
+)))
+(/usr/local/texlive/2018/texmf-dist/tex/latex/oberdiek/kvoptions.sty
+Package: kvoptions 2016/05/16 v3.12 Key value format for package options (HO)
+
+(/usr/local/texlive/2018/texmf-dist/tex/generic/oberdiek/kvsetkeys.sty
+Package: kvsetkeys 2016/05/16 v1.17 Key value parser (HO)
+
+(/usr/local/texlive/2018/texmf-dist/tex/generic/oberdiek/etexcmds.sty
+Package: etexcmds 2016/05/16 v1.6 Avoid name clashes with e-TeX commands (HO)
+
+(/usr/local/texlive/2018/texmf-dist/tex/generic/oberdiek/ifluatex.sty
+Package: ifluatex 2016/05/16 v1.4 Provides the ifluatex switch (HO)
+Package ifluatex Info: LuaTeX not detected.
+)
+Package etexcmds Info: Could not find \expanded.
+(etexcmds)             That can mean that you are not using pdfTeX 1.50 or
+(etexcmds)             that some package has redefined \expanded.
+(etexcmds)             In the latter case, load this package earlier.
+)))
+(/usr/local/texlive/2018/texmf-dist/tex/generic/oberdiek/pdftexcmds.sty
+Package: pdftexcmds 2018/01/30 v0.27 Utility functions of pdfTeX for LuaTeX (HO
+)
+Package pdftexcmds Info: LuaTeX not detected.
+Package pdftexcmds Info: \pdf@primitive is available.
+Package pdftexcmds Info: \pdf@ifprimitive is available.
+Package pdftexcmds Info: \pdfdraftmode found.
+)
+Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
+38.
+Package grfext Info: Graphics extension search list:
+(grfext)             [.pdf,.png,.jpg,.mps,.jpeg,.jbig2,.jb2,.PDF,.PNG,.JPG,.JPE
+G,.JBIG2,.JB2,.eps]
+(grfext)             \AppendGraphicsExtensions on input line 456.
+
+(/usr/local/texlive/2018/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
+File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
+e
+)))
 (./NPS_Blatt4_CeylanWangZeng.aux)
 \openout1 = `NPS_Blatt4_CeylanWangZeng.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 25.
-LaTeX Font Info:    ... okay on input line 25.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 25.
-LaTeX Font Info:    ... okay on input line 25.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 25.
-LaTeX Font Info:    ... okay on input line 25.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 25.
-LaTeX Font Info:    ... okay on input line 25.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 25.
-LaTeX Font Info:    ... okay on input line 25.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 25.
-LaTeX Font Info:    ... okay on input line 25.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 28.
+LaTeX Font Info:    ... okay on input line 28.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 28.
+LaTeX Font Info:    ... okay on input line 28.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 28.
+LaTeX Font Info:    ... okay on input line 28.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 28.
+LaTeX Font Info:    ... okay on input line 28.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 28.
+LaTeX Font Info:    ... okay on input line 28.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 28.
+LaTeX Font Info:    ... okay on input line 28.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
@@ -278,46 +353,479 @@ LaTeX Font Info:    ... okay on input line 25.
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
-LaTeX Font Info:    Try loading font information for U+msa on input line 26.
-(/usr/local/texlive/2018/texmf-dist/tex/latex/amsfonts/umsa.fd
+(/usr/local/texlive/2018/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
+[Loading MPS to PDF converter (version 2006.09.02).]
+\scratchcounter=\count114
+\scratchdimen=\dimen132
+\scratchbox=\box54
+\nofMPsegments=\count115
+\nofMParguments=\count116
+\everyMPshowfont=\toks29
+\MPscratchCnt=\count117
+\MPscratchDim=\dimen133
+\MPnumerator=\count118
+\makeMPintoPDFobject=\count119
+\everyMPtoPDFconversion=\toks30
+)
+LaTeX Font Info:    Try loading font information for U+msa on input line 29.
+ (/usr/local/texlive/2018/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 26.
+LaTeX Font Info:    Try loading font information for U+msb on input line 29.
 
 (/usr/local/texlive/2018/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
-) [1
+)
+Underfull \hbox (badness 10000) in paragraph at lines 32--43
+
+ []
+
+[1
 
 {/usr/local/texlive/2018/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
-(./NPS_Blatt4_CeylanWangZeng.aux) ) 
+Package epstopdf Info: Source file: <Figures_for_A2.2_i//1.eps>
+(epstopdf)                    date: 2020-11-27 03:26:59
+(epstopdf)                    size: 130210 bytes
+(epstopdf)             Output file: <Figures_for_A2.2_i//1-eps-converted-to.pdf
+>
+(epstopdf)                    date: 2020-11-27 03:44:11
+(epstopdf)                    size: 15428 bytes
+(epstopdf)             Command: <repstopdf --outfile=Figures_for_A2.2_i//1-eps-
+converted-to.pdf Figures_for_A2.2_i//1.eps>
+(epstopdf)             \includegraphics on input line 49.
+Package epstopdf Info: Output file is already uptodate.
+<Figures_for_A2.2_i//1-eps-converted-to.pdf, id=21, 650.43pt x 530.98375pt>
+File: Figures_for_A2.2_i//1-eps-converted-to.pdf Graphic file (type pdf)
+<use Figures_for_A2.2_i//1-eps-converted-to.pdf>
+Package pdftex.def Info: Figures_for_A2.2_i//1-eps-converted-to.pdf  used on in
+put line 49.
+(pdftex.def)             Requested size: 278.82591pt x 227.62204pt.
+Package epstopdf Info: Source file: <Figures_for_A2.2_i//2.eps>
+(epstopdf)                    date: 2020-11-27 03:26:59
+(epstopdf)                    size: 135054 bytes
+(epstopdf)             Output file: <Figures_for_A2.2_i//2-eps-converted-to.pdf
+>
+(epstopdf)                    date: 2020-11-27 03:44:12
+(epstopdf)                    size: 14892 bytes
+(epstopdf)             Command: <repstopdf --outfile=Figures_for_A2.2_i//2-eps-
+converted-to.pdf Figures_for_A2.2_i//2.eps>
+(epstopdf)             \includegraphics on input line 50.
+Package epstopdf Info: Output file is already uptodate.
+<Figures_for_A2.2_i//2-eps-converted-to.pdf, id=22, 650.43pt x 530.98375pt>
+File: Figures_for_A2.2_i//2-eps-converted-to.pdf Graphic file (type pdf)
+<use Figures_for_A2.2_i//2-eps-converted-to.pdf>
+Package pdftex.def Info: Figures_for_A2.2_i//2-eps-converted-to.pdf  used on in
+put line 50.
+(pdftex.def)             Requested size: 278.82591pt x 227.62204pt.
+Package epstopdf Info: Source file: <Figures_for_A2.2_i//3.eps>
+(epstopdf)                    date: 2020-11-27 03:26:59
+(epstopdf)                    size: 174163 bytes
+(epstopdf)             Output file: <Figures_for_A2.2_i//3-eps-converted-to.pdf
+>
+(epstopdf)                    date: 2020-11-27 03:44:25
+(epstopdf)                    size: 18763 bytes
+(epstopdf)             Command: <repstopdf --outfile=Figures_for_A2.2_i//3-eps-
+converted-to.pdf Figures_for_A2.2_i//3.eps>
+(epstopdf)             \includegraphics on input line 51.
+Package epstopdf Info: Output file is already uptodate.
+<Figures_for_A2.2_i//3-eps-converted-to.pdf, id=23, 650.43pt x 530.98375pt>
+File: Figures_for_A2.2_i//3-eps-converted-to.pdf Graphic file (type pdf)
+<use Figures_for_A2.2_i//3-eps-converted-to.pdf>
+Package pdftex.def Info: Figures_for_A2.2_i//3-eps-converted-to.pdf  used on in
+put line 51.
+(pdftex.def)             Requested size: 278.82591pt x 227.62204pt.
+Package epstopdf Info: Source file: <Figures_for_A2.2_i//4.eps>
+(epstopdf)                    date: 2020-11-27 03:26:59
+(epstopdf)                    size: 208324 bytes
+(epstopdf)             Output file: <Figures_for_A2.2_i//4-eps-converted-to.pdf
+>
+(epstopdf)                    date: 2020-11-27 03:44:25
+(epstopdf)                    size: 22259 bytes
+(epstopdf)             Command: <repstopdf --outfile=Figures_for_A2.2_i//4-eps-
+converted-to.pdf Figures_for_A2.2_i//4.eps>
+(epstopdf)             \includegraphics on input line 52.
+Package epstopdf Info: Output file is already uptodate.
+<Figures_for_A2.2_i//4-eps-converted-to.pdf, id=24, 650.43pt x 530.98375pt>
+File: Figures_for_A2.2_i//4-eps-converted-to.pdf Graphic file (type pdf)
+<use Figures_for_A2.2_i//4-eps-converted-to.pdf>
+Package pdftex.def Info: Figures_for_A2.2_i//4-eps-converted-to.pdf  used on in
+put line 52.
+(pdftex.def)             Requested size: 278.82591pt x 227.62204pt.
+Package epstopdf Info: Source file: <Figures_for_A2.2_i//5.eps>
+(epstopdf)                    date: 2020-11-27 03:26:59
+(epstopdf)                    size: 296654 bytes
+(epstopdf)             Output file: <Figures_for_A2.2_i//5-eps-converted-to.pdf
+>
+(epstopdf)                    date: 2020-11-27 03:55:20
+(epstopdf)                    size: 30787 bytes
+(epstopdf)             Command: <repstopdf --outfile=Figures_for_A2.2_i//5-eps-
+converted-to.pdf Figures_for_A2.2_i//5.eps>
+(epstopdf)             \includegraphics on input line 53.
+Package epstopdf Info: Output file is already uptodate.
+<Figures_for_A2.2_i//5-eps-converted-to.pdf, id=25, 650.43pt x 530.98375pt>
+File: Figures_for_A2.2_i//5-eps-converted-to.pdf Graphic file (type pdf)
+<use Figures_for_A2.2_i//5-eps-converted-to.pdf>
+Package pdftex.def Info: Figures_for_A2.2_i//5-eps-converted-to.pdf  used on in
+put line 53.
+(pdftex.def)             Requested size: 278.82591pt x 227.62204pt.
+Package epstopdf Info: Source file: <Figures_for_A2.2_i//6.eps>
+(epstopdf)                    date: 2020-11-27 03:26:59
+(epstopdf)                    size: 372257 bytes
+(epstopdf)             Output file: <Figures_for_A2.2_i//6-eps-converted-to.pdf
+>
+(epstopdf)                    date: 2020-11-27 03:55:21
+(epstopdf)                    size: 37962 bytes
+(epstopdf)             Command: <repstopdf --outfile=Figures_for_A2.2_i//6-eps-
+converted-to.pdf Figures_for_A2.2_i//6.eps>
+(epstopdf)             \includegraphics on input line 54.
+Package epstopdf Info: Output file is already uptodate.
+<Figures_for_A2.2_i//6-eps-converted-to.pdf, id=26, 650.43pt x 530.98375pt>
+File: Figures_for_A2.2_i//6-eps-converted-to.pdf Graphic file (type pdf)
+<use Figures_for_A2.2_i//6-eps-converted-to.pdf>
+Package pdftex.def Info: Figures_for_A2.2_i//6-eps-converted-to.pdf  used on in
+put line 54.
+(pdftex.def)             Requested size: 278.82591pt x 227.62204pt.
+Package epstopdf Info: Source file: <Figures_for_A2.2_i//7.eps>
+(epstopdf)                    date: 2020-11-27 03:26:59
+(epstopdf)                    size: 513347 bytes
+(epstopdf)             Output file: <Figures_for_A2.2_i//7-eps-converted-to.pdf
+>
+(epstopdf)                    date: 2020-11-27 03:55:21
+(epstopdf)                    size: 49712 bytes
+(epstopdf)             Command: <repstopdf --outfile=Figures_for_A2.2_i//7-eps-
+converted-to.pdf Figures_for_A2.2_i//7.eps>
+(epstopdf)             \includegraphics on input line 55.
+Package epstopdf Info: Output file is already uptodate.
+<Figures_for_A2.2_i//7-eps-converted-to.pdf, id=27, 650.43pt x 530.98375pt>
+File: Figures_for_A2.2_i//7-eps-converted-to.pdf Graphic file (type pdf)
+<use Figures_for_A2.2_i//7-eps-converted-to.pdf>
+Package pdftex.def Info: Figures_for_A2.2_i//7-eps-converted-to.pdf  used on in
+put line 55.
+(pdftex.def)             Requested size: 278.82591pt x 227.62204pt.
+Package epstopdf Info: Source file: <Figures_for_A2.2_i//8.eps>
+(epstopdf)                    date: 2020-11-27 03:26:59
+(epstopdf)                    size: 818238 bytes
+(epstopdf)             Output file: <Figures_for_A2.2_i//8-eps-converted-to.pdf
+>
+(epstopdf)                    date: 2020-11-27 03:55:22
+(epstopdf)                    size: 75514 bytes
+(epstopdf)             Command: <repstopdf --outfile=Figures_for_A2.2_i//8-eps-
+converted-to.pdf Figures_for_A2.2_i//8.eps>
+(epstopdf)             \includegraphics on input line 56.
+Package epstopdf Info: Output file is already uptodate.
+<Figures_for_A2.2_i//8-eps-converted-to.pdf, id=28, 650.43pt x 530.98375pt>
+File: Figures_for_A2.2_i//8-eps-converted-to.pdf Graphic file (type pdf)
+<use Figures_for_A2.2_i//8-eps-converted-to.pdf>
+Package pdftex.def Info: Figures_for_A2.2_i//8-eps-converted-to.pdf  used on in
+put line 56.
+(pdftex.def)             Requested size: 278.82591pt x 227.62204pt.
+Package epstopdf Info: Source file: <Figures_for_A2.2_i//9.eps>
+(epstopdf)                    date: 2020-11-27 03:26:59
+(epstopdf)                    size: 1624780 bytes
+(epstopdf)             Output file: <Figures_for_A2.2_i//9-eps-converted-to.pdf
+>
+(epstopdf)                    date: 2020-11-27 03:55:23
+(epstopdf)                    size: 149499 bytes
+(epstopdf)             Command: <repstopdf --outfile=Figures_for_A2.2_i//9-eps-
+converted-to.pdf Figures_for_A2.2_i//9.eps>
+(epstopdf)             \includegraphics on input line 57.
+Package epstopdf Info: Output file is already uptodate.
+<Figures_for_A2.2_i//9-eps-converted-to.pdf, id=29, 650.43pt x 530.98375pt>
+File: Figures_for_A2.2_i//9-eps-converted-to.pdf Graphic file (type pdf)
+<use Figures_for_A2.2_i//9-eps-converted-to.pdf>
+Package pdftex.def Info: Figures_for_A2.2_i//9-eps-converted-to.pdf  used on in
+put line 57.
+(pdftex.def)             Requested size: 278.82591pt x 227.62204pt.
+Package epstopdf Info: Source file: <Figures_for_A2.2_i//10.eps>
+(epstopdf)                    date: 2020-11-27 03:26:59
+(epstopdf)                    size: 1907211 bytes
+(epstopdf)             Output file: <Figures_for_A2.2_i//10-eps-converted-to.pd
+f>
+(epstopdf)                    date: 2020-11-27 03:55:23
+(epstopdf)                    size: 172857 bytes
+(epstopdf)             Command: <repstopdf --outfile=Figures_for_A2.2_i//10-eps
+-converted-to.pdf Figures_for_A2.2_i//10.eps>
+(epstopdf)             \includegraphics on input line 58.
+Package epstopdf Info: Output file is already uptodate.
+<Figures_for_A2.2_i//10-eps-converted-to.pdf, id=30, 650.43pt x 530.98375pt>
+File: Figures_for_A2.2_i//10-eps-converted-to.pdf Graphic file (type pdf)
+<use Figures_for_A2.2_i//10-eps-converted-to.pdf>
+Package pdftex.def Info: Figures_for_A2.2_i//10-eps-converted-to.pdf  used on i
+nput line 58.
+(pdftex.def)             Requested size: 278.82591pt x 227.62204pt.
+
+Overfull \hbox (49.94559pt too wide) in paragraph at lines 48--59
+| [] |  [] 
+ []
+
+
+Overfull \hbox (49.94559pt too wide) in paragraph at lines 48--59
+| [] |  [] 
+ []
+
+
+Overfull \hbox (49.94559pt too wide) in paragraph at lines 48--59
+| [] |  [] 
+ []
+
+
+Overfull \hbox (49.94559pt too wide) in paragraph at lines 48--59
+| [] |  [] 
+ []
+
+
+Overfull \hbox (49.94559pt too wide) in paragraph at lines 48--59
+| [] |  [] 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 48--59
+
+ []
+
+[2 <./Figures_for_A2.2_i//1-eps-converted-to.pdf> <./Figures_for_A2.2_i//2-eps-
+converted-to.pdf> <./Figures_for_A2.2_i//3-eps-converted-to.pdf> <./Figures_for
+_A2.2_i//4-eps-converted-to.pdf> <./Figures_for_A2.2_i//5-eps-converted-to.pdf>
+ <./Figures_for_A2.2_i//6-eps-converted-to.pdf>] [3 <./Figures_for_A2.2_i//7-ep
+s-converted-to.pdf> <./Figures_for_A2.2_i//8-eps-converted-to.pdf> <./Figures_f
+or_A2.2_i//9-eps-converted-to.pdf> <./Figures_for_A2.2_i//10-eps-converted-to.p
+df>]
+Package epstopdf Info: Source file: <Figures_for_A2.2_ii//1.eps>
+(epstopdf)                    date: 2020-11-27 03:26:59
+(epstopdf)                    size: 125262 bytes
+(epstopdf)             Output file: <Figures_for_A2.2_ii//1-eps-converted-to.pd
+f>
+(epstopdf)                    date: 2020-11-27 03:56:49
+(epstopdf)                    size: 13823 bytes
+(epstopdf)             Command: <repstopdf --outfile=Figures_for_A2.2_ii//1-eps
+-converted-to.pdf Figures_for_A2.2_ii//1.eps>
+(epstopdf)             \includegraphics on input line 62.
+Package epstopdf Info: Output file is already uptodate.
+<Figures_for_A2.2_ii//1-eps-converted-to.pdf, id=349, 650.43pt x 530.98375pt>
+File: Figures_for_A2.2_ii//1-eps-converted-to.pdf Graphic file (type pdf)
+<use Figures_for_A2.2_ii//1-eps-converted-to.pdf>
+Package pdftex.def Info: Figures_for_A2.2_ii//1-eps-converted-to.pdf  used on i
+nput line 62.
+(pdftex.def)             Requested size: 278.82591pt x 227.62204pt.
+Package epstopdf Info: Source file: <Figures_for_A2.2_ii//2.eps>
+(epstopdf)                    date: 2020-11-27 03:26:59
+(epstopdf)                    size: 132500 bytes
+(epstopdf)             Output file: <Figures_for_A2.2_ii//2-eps-converted-to.pd
+f>
+(epstopdf)                    date: 2020-11-27 03:56:49
+(epstopdf)                    size: 14749 bytes
+(epstopdf)             Command: <repstopdf --outfile=Figures_for_A2.2_ii//2-eps
+-converted-to.pdf Figures_for_A2.2_ii//2.eps>
+(epstopdf)             \includegraphics on input line 63.
+Package epstopdf Info: Output file is already uptodate.
+<Figures_for_A2.2_ii//2-eps-converted-to.pdf, id=350, 650.43pt x 530.98375pt>
+File: Figures_for_A2.2_ii//2-eps-converted-to.pdf Graphic file (type pdf)
+<use Figures_for_A2.2_ii//2-eps-converted-to.pdf>
+Package pdftex.def Info: Figures_for_A2.2_ii//2-eps-converted-to.pdf  used on i
+nput line 63.
+(pdftex.def)             Requested size: 278.82591pt x 227.62204pt.
+Package epstopdf Info: Source file: <Figures_for_A2.2_ii//3.eps>
+(epstopdf)                    date: 2020-11-27 03:26:59
+(epstopdf)                    size: 165075 bytes
+(epstopdf)             Output file: <Figures_for_A2.2_ii//3-eps-converted-to.pd
+f>
+(epstopdf)                    date: 2020-11-27 03:56:50
+(epstopdf)                    size: 18256 bytes
+(epstopdf)             Command: <repstopdf --outfile=Figures_for_A2.2_ii//3-eps
+-converted-to.pdf Figures_for_A2.2_ii//3.eps>
+(epstopdf)             \includegraphics on input line 64.
+Package epstopdf Info: Output file is already uptodate.
+<Figures_for_A2.2_ii//3-eps-converted-to.pdf, id=351, 650.43pt x 530.98375pt>
+File: Figures_for_A2.2_ii//3-eps-converted-to.pdf Graphic file (type pdf)
+<use Figures_for_A2.2_ii//3-eps-converted-to.pdf>
+Package pdftex.def Info: Figures_for_A2.2_ii//3-eps-converted-to.pdf  used on i
+nput line 64.
+(pdftex.def)             Requested size: 278.82591pt x 227.62204pt.
+Package epstopdf Info: Source file: <Figures_for_A2.2_ii//4.eps>
+(epstopdf)                    date: 2020-11-27 03:26:59
+(epstopdf)                    size: 197016 bytes
+(epstopdf)             Output file: <Figures_for_A2.2_ii//4-eps-converted-to.pd
+f>
+(epstopdf)                    date: 2020-11-27 03:56:50
+(epstopdf)                    size: 21534 bytes
+(epstopdf)             Command: <repstopdf --outfile=Figures_for_A2.2_ii//4-eps
+-converted-to.pdf Figures_for_A2.2_ii//4.eps>
+(epstopdf)             \includegraphics on input line 65.
+Package epstopdf Info: Output file is already uptodate.
+<Figures_for_A2.2_ii//4-eps-converted-to.pdf, id=352, 650.43pt x 530.98375pt>
+File: Figures_for_A2.2_ii//4-eps-converted-to.pdf Graphic file (type pdf)
+<use Figures_for_A2.2_ii//4-eps-converted-to.pdf>
+Package pdftex.def Info: Figures_for_A2.2_ii//4-eps-converted-to.pdf  used on i
+nput line 65.
+(pdftex.def)             Requested size: 278.82591pt x 227.62204pt.
+Package epstopdf Info: Source file: <Figures_for_A2.2_ii//5.eps>
+(epstopdf)                    date: 2020-11-27 03:26:59
+(epstopdf)                    size: 279705 bytes
+(epstopdf)             Output file: <Figures_for_A2.2_ii//5-eps-converted-to.pd
+f>
+(epstopdf)                    date: 2020-11-27 03:56:51
+(epstopdf)                    size: 28741 bytes
+(epstopdf)             Command: <repstopdf --outfile=Figures_for_A2.2_ii//5-eps
+-converted-to.pdf Figures_for_A2.2_ii//5.eps>
+(epstopdf)             \includegraphics on input line 66.
+Package epstopdf Info: Output file is already uptodate.
+<Figures_for_A2.2_ii//5-eps-converted-to.pdf, id=353, 650.43pt x 530.98375pt>
+File: Figures_for_A2.2_ii//5-eps-converted-to.pdf Graphic file (type pdf)
+<use Figures_for_A2.2_ii//5-eps-converted-to.pdf>
+Package pdftex.def Info: Figures_for_A2.2_ii//5-eps-converted-to.pdf  used on i
+nput line 66.
+(pdftex.def)             Requested size: 278.82591pt x 227.62204pt.
+Package epstopdf Info: Source file: <Figures_for_A2.2_ii//6.eps>
+(epstopdf)                    date: 2020-11-27 03:26:59
+(epstopdf)                    size: 365314 bytes
+(epstopdf)             Output file: <Figures_for_A2.2_ii//6-eps-converted-to.pd
+f>
+(epstopdf)                    date: 2020-11-27 03:59:41
+(epstopdf)                    size: 36009 bytes
+(epstopdf)             Command: <repstopdf --outfile=Figures_for_A2.2_ii//6-eps
+-converted-to.pdf Figures_for_A2.2_ii//6.eps>
+(epstopdf)             \includegraphics on input line 67.
+Package epstopdf Info: Output file is already uptodate.
+<Figures_for_A2.2_ii//6-eps-converted-to.pdf, id=354, 650.43pt x 530.98375pt>
+File: Figures_for_A2.2_ii//6-eps-converted-to.pdf Graphic file (type pdf)
+<use Figures_for_A2.2_ii//6-eps-converted-to.pdf>
+Package pdftex.def Info: Figures_for_A2.2_ii//6-eps-converted-to.pdf  used on i
+nput line 67.
+(pdftex.def)             Requested size: 278.82591pt x 227.62204pt.
+Package epstopdf Info: Source file: <Figures_for_A2.2_ii//7.eps>
+(epstopdf)                    date: 2020-11-27 03:26:59
+(epstopdf)                    size: 549418 bytes
+(epstopdf)             Output file: <Figures_for_A2.2_ii//7-eps-converted-to.pd
+f>
+(epstopdf)                    date: 2020-11-27 03:56:51
+(epstopdf)                    size: 52346 bytes
+(epstopdf)             Command: <repstopdf --outfile=Figures_for_A2.2_ii//7-eps
+-converted-to.pdf Figures_for_A2.2_ii//7.eps>
+(epstopdf)             \includegraphics on input line 68.
+Package epstopdf Info: Output file is already uptodate.
+<Figures_for_A2.2_ii//7-eps-converted-to.pdf, id=355, 650.43pt x 530.98375pt>
+File: Figures_for_A2.2_ii//7-eps-converted-to.pdf Graphic file (type pdf)
+<use Figures_for_A2.2_ii//7-eps-converted-to.pdf>
+Package pdftex.def Info: Figures_for_A2.2_ii//7-eps-converted-to.pdf  used on i
+nput line 68.
+(pdftex.def)             Requested size: 278.82591pt x 227.62204pt.
+Package epstopdf Info: Source file: <Figures_for_A2.2_ii//8.eps>
+(epstopdf)                    date: 2020-11-27 03:26:59
+(epstopdf)                    size: 1028177 bytes
+(epstopdf)             Output file: <Figures_for_A2.2_ii//8-eps-converted-to.pd
+f>
+(epstopdf)                    date: 2020-11-27 03:56:52
+(epstopdf)                    size: 99175 bytes
+(epstopdf)             Command: <repstopdf --outfile=Figures_for_A2.2_ii//8-eps
+-converted-to.pdf Figures_for_A2.2_ii//8.eps>
+(epstopdf)             \includegraphics on input line 69.
+Package epstopdf Info: Output file is already uptodate.
+<Figures_for_A2.2_ii//8-eps-converted-to.pdf, id=356, 650.43pt x 530.98375pt>
+File: Figures_for_A2.2_ii//8-eps-converted-to.pdf Graphic file (type pdf)
+<use Figures_for_A2.2_ii//8-eps-converted-to.pdf>
+Package pdftex.def Info: Figures_for_A2.2_ii//8-eps-converted-to.pdf  used on i
+nput line 69.
+(pdftex.def)             Requested size: 278.82591pt x 227.62204pt.
+Package epstopdf Info: Source file: <Figures_for_A2.2_ii//9.eps>
+(epstopdf)                    date: 2020-11-27 03:26:59
+(epstopdf)                    size: 2195089 bytes
+(epstopdf)             Output file: <Figures_for_A2.2_ii//9-eps-converted-to.pd
+f>
+(epstopdf)                    date: 2020-11-27 03:56:53
+(epstopdf)                    size: 216353 bytes
+(epstopdf)             Command: <repstopdf --outfile=Figures_for_A2.2_ii//9-eps
+-converted-to.pdf Figures_for_A2.2_ii//9.eps>
+(epstopdf)             \includegraphics on input line 70.
+Package epstopdf Info: Output file is already uptodate.
+<Figures_for_A2.2_ii//9-eps-converted-to.pdf, id=357, 650.43pt x 530.98375pt>
+File: Figures_for_A2.2_ii//9-eps-converted-to.pdf Graphic file (type pdf)
+<use Figures_for_A2.2_ii//9-eps-converted-to.pdf>
+Package pdftex.def Info: Figures_for_A2.2_ii//9-eps-converted-to.pdf  used on i
+nput line 70.
+(pdftex.def)             Requested size: 278.82591pt x 227.62204pt.
+Package epstopdf Info: Source file: <Figures_for_A2.2_ii//10.eps>
+(epstopdf)                    date: 2020-11-27 03:26:59
+(epstopdf)                    size: 2448166 bytes
+(epstopdf)             Output file: <Figures_for_A2.2_ii//10-eps-converted-to.p
+df>
+(epstopdf)                    date: 2020-11-27 03:56:54
+(epstopdf)                    size: 248291 bytes
+(epstopdf)             Command: <repstopdf --outfile=Figures_for_A2.2_ii//10-ep
+s-converted-to.pdf Figures_for_A2.2_ii//10.eps>
+(epstopdf)             \includegraphics on input line 71.
+Package epstopdf Info: Output file is already uptodate.
+<Figures_for_A2.2_ii//10-eps-converted-to.pdf, id=358, 650.43pt x 530.98375pt>
+File: Figures_for_A2.2_ii//10-eps-converted-to.pdf Graphic file (type pdf)
+<use Figures_for_A2.2_ii//10-eps-converted-to.pdf>
+Package pdftex.def Info: Figures_for_A2.2_ii//10-eps-converted-to.pdf  used on 
+input line 71.
+(pdftex.def)             Requested size: 278.82591pt x 227.62204pt.
+
+Overfull \hbox (49.94559pt too wide) in paragraph at lines 61--72
+| [] |  [] 
+ []
+
+
+Overfull \hbox (49.94559pt too wide) in paragraph at lines 61--72
+| [] |  [] 
+ []
+
+
+Overfull \hbox (49.94559pt too wide) in paragraph at lines 61--72
+| [] |  [] 
+ []
+
+
+Overfull \hbox (49.94559pt too wide) in paragraph at lines 61--72
+| [] |  [] 
+ []
+
+
+Overfull \hbox (49.94559pt too wide) in paragraph at lines 61--72
+| [] |  [] 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 61--72
+
+ []
+
+[4 <./Figures_for_A2.2_ii//1-eps-converted-to.pdf> <./Figures_for_A2.2_ii//2-ep
+s-converted-to.pdf> <./Figures_for_A2.2_ii//3-eps-converted-to.pdf> <./Figures_
+for_A2.2_ii//4-eps-converted-to.pdf> <./Figures_for_A2.2_ii//5-eps-converted-to
+.pdf> <./Figures_for_A2.2_ii//6-eps-converted-to.pdf>] [5 <./Figures_for_A2.2_i
+i//7-eps-converted-to.pdf> <./Figures_for_A2.2_ii//8-eps-converted-to.pdf> <./F
+igures_for_A2.2_ii//9-eps-converted-to.pdf> <./Figures_for_A2.2_ii//10-eps-conv
+erted-to.pdf>] (./NPS_Blatt4_CeylanWangZeng.aux) ) 
 Here is how much of TeX's memory you used:
- 2703 strings out of 492649
- 34142 string characters out of 6129622
- 112133 words of memory out of 5000000
- 6555 multiletter control sequences out of 15000+600000
+ 3962 strings out of 492649
+ 56285 string characters out of 6129622
+ 133681 words of memory out of 5000000
+ 7743 multiletter control sequences out of 15000+600000
  16211 words of font info for 50 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 27i,6n,27p,348b,201s stack positions out of 5000i,500n,10000p,200000b,80000s
-{/usr/local/texlive/2018/texmf-dist/fonts/en
-c/dvips/cm-super/cm-super-t1.enc}</usr/local/texlive/2018/texmf-dist/fonts/type
-1/public/amsfonts/cm/cmbx10.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1
-/public/amsfonts/cm/cmex10.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/
-public/amsfonts/cm/cmmi10.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/p
-ublic/amsfonts/cm/cmmi7.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/pub
-lic/amsfonts/cm/cmr10.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/publi
-c/amsfonts/cm/cmr7.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/a
-msfonts/cm/cmsy10.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/am
-sfonts/symbols/msbm10.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/publi
-c/cm-super/sfbx1000.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/
-cm-super/sfbx1440.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/cm
--super/sfrm1000.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/cm-s
-uper/sfrm1200.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/cm-sup
-er/sfrm1728.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/cm-super
-/sfti1000.pfb>
-Output written on NPS_Blatt4_CeylanWangZeng.pdf (1 page, 150439 bytes).
+ 42i,6n,27p,517b,203s stack positions out of 5000i,500n,10000p,200000b,80000s
+{/usr/local/texlive/2018/texm
+f-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc}</usr/local/texlive/2018/texmf-
+dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/local/texlive/2018/texmf-d
+ist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/local/texlive/2018/texmf-di
+st/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/texlive/2018/texmf-dis
+t/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/local/texlive/2018/texmf-dist/
+fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2018/texmf-dist/fo
+nts/type1/public/amsfonts/cm/cmr7.pfb></usr/local/texlive/2018/texmf-dist/fonts
+/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2018/texmf-dist/fonts/
+type1/public/amsfonts/cm/cmsy7.pfb></usr/local/texlive/2018/texmf-dist/fonts/ty
+pe1/public/amsfonts/symbols/msbm10.pfb></usr/local/texlive/2018/texmf-dist/font
+s/type1/public/cm-super/sfbx1000.pfb></usr/local/texlive/2018/texmf-dist/fonts/
+type1/public/cm-super/sfbx1440.pfb></usr/local/texlive/2018/texmf-dist/fonts/ty
+pe1/public/cm-super/sfrm1000.pfb></usr/local/texlive/2018/texmf-dist/fonts/type
+1/public/cm-super/sfrm1200.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/
+public/cm-super/sfrm1728.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/pu
+blic/cm-super/sfti1000.pfb>
+Output written on NPS_Blatt4_CeylanWangZeng.pdf (5 pages, 1437548 bytes).
 PDF statistics:
- 65 PDF objects out of 1000 (max. 8388607)
- 47 compressed objects within 1 object stream
+ 733 PDF objects out of 1000 (max. 8388607)
+ 138 compressed objects within 2 object streams
  0 named destinations out of 1000 (max. 500000)
- 1 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 101 words of extra memory for PDF output out of 10000 (max. 10000000)
 
