@@ -63,7 +63,7 @@ def kernel_result_for_2_2_ii( s, kernel_function_name , norm_name, plot=False, o
 
 
 ################   Execution area    ################
-s = 0.1
+s = 1
 '''
 kernel_function_name = 'epanechnikov'
 norm_name = 'euclidean'
