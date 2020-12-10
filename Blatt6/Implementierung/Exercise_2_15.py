@@ -63,14 +63,14 @@ def kernel_result_for_2_2_ii( s, kernel_function_name , norm_name, plot=False, o
 
 
 ################   Execution area    ################
-s = 1
+s = 0.005
 '''
 kernel_function_name = 'epanechnikov'
 norm_name = 'euclidean'
 kernel_result_for_2_2_ii( s, kernel_function_name , norm_name, plot=True, output=True )
 '''
 
-kernel_functions = ['moving_window', 'triangular', 'epanechnikov', 'gaussian',]
+kernel_functions = ['moving_window', 'triangular', 'epanechnikov', 'gaussian']
 norms = ['euclidean','supremum']
 
 for kernel_funtion in kernel_functions:
