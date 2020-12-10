@@ -5,9 +5,7 @@ import math
 import Exercise_2_2 as dg
 import matplotlib
 from matplotlib import cm, colors
-
-
-
+import os
 
 # Defining the kernel density estimator: 
 def kernel(data, s, kernel_function_name , norm_name):
@@ -57,25 +55,57 @@ def kernel_result_for_2_2_ii( s, kernel_function_name , norm_name, plot=False, o
     if output:
         af.writeCsv('Kernel_result_2.2_s_'+str(s)+'_'+kernel_function_name+'_'+norm_name+'.csv',output_data)
 
+# Roughly computing the L1 norm of the estimated density
 
+def rough_L1_A2_22(data):
+    result = 0
+    points = af.grid_for_2_2(50)
+    for i in range(len(data)):
+        if points[i][0]**2+points[i][1]**2 < 1:
+            result += abs(data[i][0]-1/math.pi)*0.042*0.042
+        else:
+            result += data[i][0]
+    return round(result,5)
 
+def compute_store_rough_L1_A2_22():
 
+    def name_mapping(file_name):
+        result = []
+        if file_name.find('moving')>-1:
+            result.append('moving_window')
+        else:
+            result.append('gaussian')
+        if file_name.find('eucl')>-1:
+            result.append('euclidean')
+        else:
+            result.append('supremum')
+        return result
+
+    path = os.getcwd()+"//comparison. various s. gaussian vs moving window//"
+    l = os.listdir(path)
+    ll = []
+    for file in l:
+        if file.find('eps')==-1:
+            ll.append(file)
+    result = []
+    for file in ll: 
+        s = float(file[20:26][0:(file[20:26].find('_'))])
+        kernel_type, norm_type = name_mapping(file)
+        data = af.read_data_without_label(path+file)
+        L1_norm = rough_L1_A2_22(data)
+        result.append( [s,kernel_type,norm_type,L1_norm] )
+    af.writeCsv('qualitative_comparison_results.csv',result)
 
 
 ################   Execution area    ################
-s = 0.005
-'''
-kernel_function_name = 'epanechnikov'
-norm_name = 'euclidean'
-kernel_result_for_2_2_ii( s, kernel_function_name , norm_name, plot=True, output=True )
-'''
 
+# Generating plots
 kernel_functions = ['moving_window', 'triangular', 'epanechnikov', 'gaussian']
 norms = ['euclidean','supremum']
-
-#for kernel_funtion in kernel_functions:
-#    for norm in norms:
-#        kernel_result_for_2_2_ii( s, kernel_funtion , norm, plot=True, output=True )
+'''
+for kernel_funtion in kernel_functions:
+    for norm in norms:
+        kernel_result_for_2_2_ii( s, kernel_funtion , norm, plot=True, output=True )
 
 ss = [0.2, 0.1, 0.08, 0.06, 0.04, 0.03, 0.02, 0.01, 0.008 ]
 norms = ['euclidean','supremum']
@@ -83,3 +113,6 @@ for s in ss:
     for norm in norms:
         kernel_result_for_2_2_ii( s, 'moving_window' , norm, plot=True, output=True )
         kernel_result_for_2_2_ii( s, 'gaussian' , norm, plot=True, output=True )
+'''
+
+compute_store_rough_L1_A2_22()

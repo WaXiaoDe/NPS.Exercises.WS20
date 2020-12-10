@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018) (preloaded format=pdflatex 2019.3.14)  8 DEC 2020 10:32
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018) (preloaded format=pdflatex 2019.3.14)  10 DEC 2020 21:07
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -303,21 +303,22 @@ G,.JBIG2,.JB2,.eps]
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
 e
 )))
-No file NPS_Blatt6_CeylanWangZeng.aux.
+(./NPS_Blatt6_CeylanWangZeng.aux)
 \openout1 = `NPS_Blatt6_CeylanWangZeng.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 28.
-LaTeX Font Info:    ... okay on input line 28.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 28.
-LaTeX Font Info:    ... okay on input line 28.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 28.
-LaTeX Font Info:    ... okay on input line 28.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 28.
-LaTeX Font Info:    ... okay on input line 28.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 28.
-LaTeX Font Info:    ... okay on input line 28.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 28.
-LaTeX Font Info:    ... okay on input line 28.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 29.
+LaTeX Font Info:    ... okay on input line 29.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 29.
+LaTeX Font Info:    ... okay on input line 29.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 29.
+LaTeX Font Info:    ... okay on input line 29.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 29.
+LaTeX Font Info:    ... okay on input line 29.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 29.
+LaTeX Font Info:    ... okay on input line 29.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 29.
+LaTeX Font Info:    ... okay on input line 29.
+
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
 *geometry* verbose mode - [ preamble ] result:
@@ -366,42 +367,746 @@ LaTeX Font Info:    ... okay on input line 28.
 \makeMPintoPDFobject=\count119
 \everyMPtoPDFconversion=\toks30
 )
-LaTeX Font Info:    Try loading font information for U+msa on input line 29.
+LaTeX Font Info:    Try loading font information for U+msa on input line 30.
  (/usr/local/texlive/2018/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 29.
+LaTeX Font Info:    Try loading font information for U+msb on input line 30.
 
 (/usr/local/texlive/2018/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-Underfull \hbox (badness 10000) in paragraph at lines 32--33
+Package epstopdf Info: Source file: <comparisons//Kernel_result_2-2ii_s_0-2_mov
+ing_window_euclidean.eps>
+(epstopdf)                    date: 2020-12-10 16:19:47
+(epstopdf)                    size: 390452 bytes
+(epstopdf)             Output file: <comparisons//Kernel_result_2-2ii_s_0-2_mov
+ing_window_euclidean-eps-converted-to.pdf>
+(epstopdf)                    date: 2020-12-10 18:02:11
+(epstopdf)                    size: 37037 bytes
+(epstopdf)             Command: <repstopdf --outfile=comparisons//Kernel_result
+_2-2ii_s_0-2_moving_window_euclidean-eps-converted-to.pdf comparisons//Kernel_r
+esult_2-2ii_s_0-2_moving_window_euclidean.eps>
+(epstopdf)             \includegraphics on input line 39.
+Package epstopdf Info: Output file is already uptodate.
+<comparisons//Kernel_result_2-2ii_s_0-2_moving_window_euclidean-eps-converted-t
+o.pdf, id=1, 578.16pt x 462.52798pt>
+File: comparisons//Kernel_result_2-2ii_s_0-2_moving_window_euclidean-eps-conver
+ted-to.pdf Graphic file (type pdf)
+<use comparisons//Kernel_result_2-2ii_s_0-2_moving_window_euclidean-eps-convert
+ed-to.pdf>
+Package pdftex.def Info: comparisons//Kernel_result_2-2ii_s_0-2_moving_window_e
+uclidean-eps-converted-to.pdf  used on input line 39.
+(pdftex.def)             Requested size: 284.52713pt x 227.62204pt.
+Package epstopdf Info: Source file: <comparisons//Kernel_result_2-2ii_s_0-2_mov
+ing_window_supremum.eps>
+(epstopdf)                    date: 2020-12-10 16:19:47
+(epstopdf)                    size: 388218 bytes
+(epstopdf)             Output file: <comparisons//Kernel_result_2-2ii_s_0-2_mov
+ing_window_supremum-eps-converted-to.pdf>
+(epstopdf)                    date: 2020-12-10 18:02:11
+(epstopdf)                    size: 36475 bytes
+(epstopdf)             Command: <repstopdf --outfile=comparisons//Kernel_result
+_2-2ii_s_0-2_moving_window_supremum-eps-converted-to.pdf comparisons//Kernel_re
+sult_2-2ii_s_0-2_moving_window_supremum.eps>
+(epstopdf)             \includegraphics on input line 40.
+Package epstopdf Info: Output file is already uptodate.
+<comparisons//Kernel_result_2-2ii_s_0-2_moving_window_supremum-eps-converted-to
+.pdf, id=2, 578.16pt x 462.52798pt>
+File: comparisons//Kernel_result_2-2ii_s_0-2_moving_window_supremum-eps-convert
+ed-to.pdf Graphic file (type pdf)
+<use comparisons//Kernel_result_2-2ii_s_0-2_moving_window_supremum-eps-converte
+d-to.pdf>
+Package pdftex.def Info: comparisons//Kernel_result_2-2ii_s_0-2_moving_window_s
+upremum-eps-converted-to.pdf  used on input line 40.
+(pdftex.def)             Requested size: 284.52713pt x 227.62204pt.
+Package epstopdf Info: Source file: <comparisons//Kernel_result_2-2ii_s_0-1_mov
+ing_window_euclidean.eps>
+(epstopdf)                    date: 2020-12-10 16:19:47
+(epstopdf)                    size: 391220 bytes
+(epstopdf)             Output file: <comparisons//Kernel_result_2-2ii_s_0-1_mov
+ing_window_euclidean-eps-converted-to.pdf>
+(epstopdf)                    date: 2020-12-10 18:05:18
+(epstopdf)                    size: 37746 bytes
+(epstopdf)             Command: <repstopdf --outfile=comparisons//Kernel_result
+_2-2ii_s_0-1_moving_window_euclidean-eps-converted-to.pdf comparisons//Kernel_r
+esult_2-2ii_s_0-1_moving_window_euclidean.eps>
+(epstopdf)             \includegraphics on input line 41.
+Package epstopdf Info: Output file is already uptodate.
+<comparisons//Kernel_result_2-2ii_s_0-1_moving_window_euclidean-eps-converted-t
+o.pdf, id=3, 578.16pt x 462.52798pt>
+File: comparisons//Kernel_result_2-2ii_s_0-1_moving_window_euclidean-eps-conver
+ted-to.pdf Graphic file (type pdf)
+<use comparisons//Kernel_result_2-2ii_s_0-1_moving_window_euclidean-eps-convert
+ed-to.pdf>
+Package pdftex.def Info: comparisons//Kernel_result_2-2ii_s_0-1_moving_window_e
+uclidean-eps-converted-to.pdf  used on input line 41.
+(pdftex.def)             Requested size: 284.52713pt x 227.62204pt.
+Package epstopdf Info: Source file: <comparisons//Kernel_result_2-2ii_s_0-1_mov
+ing_window_supremum.eps>
+(epstopdf)                    date: 2020-12-10 16:19:47
+(epstopdf)                    size: 390484 bytes
+(epstopdf)             Output file: <comparisons//Kernel_result_2-2ii_s_0-1_mov
+ing_window_supremum-eps-converted-to.pdf>
+(epstopdf)                    date: 2020-12-10 18:05:19
+(epstopdf)                    size: 37153 bytes
+(epstopdf)             Command: <repstopdf --outfile=comparisons//Kernel_result
+_2-2ii_s_0-1_moving_window_supremum-eps-converted-to.pdf comparisons//Kernel_re
+sult_2-2ii_s_0-1_moving_window_supremum.eps>
+(epstopdf)             \includegraphics on input line 42.
+Package epstopdf Info: Output file is already uptodate.
+<comparisons//Kernel_result_2-2ii_s_0-1_moving_window_supremum-eps-converted-to
+.pdf, id=4, 578.16pt x 462.52798pt>
+File: comparisons//Kernel_result_2-2ii_s_0-1_moving_window_supremum-eps-convert
+ed-to.pdf Graphic file (type pdf)
+<use comparisons//Kernel_result_2-2ii_s_0-1_moving_window_supremum-eps-converte
+d-to.pdf>
+Package pdftex.def Info: comparisons//Kernel_result_2-2ii_s_0-1_moving_window_s
+upremum-eps-converted-to.pdf  used on input line 42.
+(pdftex.def)             Requested size: 284.52713pt x 227.62204pt.
+Package epstopdf Info: Source file: <comparisons//Kernel_result_2-2ii_s_0-06_mo
+ving_window_euclidean.eps>
+(epstopdf)                    date: 2020-12-10 16:19:47
+(epstopdf)                    size: 391653 bytes
+(epstopdf)             Output file: <comparisons//Kernel_result_2-2ii_s_0-06_mo
+ving_window_euclidean-eps-converted-to.pdf>
+(epstopdf)                    date: 2020-12-10 18:09:17
+(epstopdf)                    size: 38791 bytes
+(epstopdf)             Command: <repstopdf --outfile=comparisons//Kernel_result
+_2-2ii_s_0-06_moving_window_euclidean-eps-converted-to.pdf comparisons//Kernel_
+result_2-2ii_s_0-06_moving_window_euclidean.eps>
+(epstopdf)             \includegraphics on input line 43.
+Package epstopdf Info: Output file is already uptodate.
+<comparisons//Kernel_result_2-2ii_s_0-06_moving_window_euclidean-eps-converted-
+to.pdf, id=5, 578.16pt x 462.52798pt>
+File: comparisons//Kernel_result_2-2ii_s_0-06_moving_window_euclidean-eps-conve
+rted-to.pdf Graphic file (type pdf)
+<use comparisons//Kernel_result_2-2ii_s_0-06_moving_window_euclidean-eps-conver
+ted-to.pdf>
+Package pdftex.def Info: comparisons//Kernel_result_2-2ii_s_0-06_moving_window_
+euclidean-eps-converted-to.pdf  used on input line 43.
+(pdftex.def)             Requested size: 284.52713pt x 227.62204pt.
+Package epstopdf Info: Source file: <comparisons//Kernel_result_2-2ii_s_0-06_mo
+ving_window_supremum.eps>
+(epstopdf)                    date: 2020-12-10 16:19:47
+(epstopdf)                    size: 390617 bytes
+(epstopdf)             Output file: <comparisons//Kernel_result_2-2ii_s_0-06_mo
+ving_window_supremum-eps-converted-to.pdf>
+(epstopdf)                    date: 2020-12-10 18:07:57
+(epstopdf)                    size: 38347 bytes
+(epstopdf)             Command: <repstopdf --outfile=comparisons//Kernel_result
+_2-2ii_s_0-06_moving_window_supremum-eps-converted-to.pdf comparisons//Kernel_r
+esult_2-2ii_s_0-06_moving_window_supremum.eps>
+(epstopdf)             \includegraphics on input line 44.
+Package epstopdf Info: Output file is already uptodate.
+<comparisons//Kernel_result_2-2ii_s_0-06_moving_window_supremum-eps-converted-t
+o.pdf, id=6, 578.16pt x 462.52798pt>
+File: comparisons//Kernel_result_2-2ii_s_0-06_moving_window_supremum-eps-conver
+ted-to.pdf Graphic file (type pdf)
+<use comparisons//Kernel_result_2-2ii_s_0-06_moving_window_supremum-eps-convert
+ed-to.pdf>
+Package pdftex.def Info: comparisons//Kernel_result_2-2ii_s_0-06_moving_window_
+supremum-eps-converted-to.pdf  used on input line 44.
+(pdftex.def)             Requested size: 284.52713pt x 227.62204pt.
+Package epstopdf Info: Source file: <comparisons//Kernel_result_2-2ii_s_0-04_mo
+ving_window_euclidean.eps>
+(epstopdf)                    date: 2020-12-10 16:19:47
+(epstopdf)                    size: 387945 bytes
+(epstopdf)             Output file: <comparisons//Kernel_result_2-2ii_s_0-04_mo
+ving_window_euclidean-eps-converted-to.pdf>
+(epstopdf)                    date: 2020-12-10 18:09:17
+(epstopdf)                    size: 36412 bytes
+(epstopdf)             Command: <repstopdf --outfile=comparisons//Kernel_result
+_2-2ii_s_0-04_moving_window_euclidean-eps-converted-to.pdf comparisons//Kernel_
+result_2-2ii_s_0-04_moving_window_euclidean.eps>
+(epstopdf)             \includegraphics on input line 45.
+Package epstopdf Info: Output file is already uptodate.
+<comparisons//Kernel_result_2-2ii_s_0-04_moving_window_euclidean-eps-converted-
+to.pdf, id=7, 578.16pt x 462.52798pt>
+File: comparisons//Kernel_result_2-2ii_s_0-04_moving_window_euclidean-eps-conve
+rted-to.pdf Graphic file (type pdf)
+<use comparisons//Kernel_result_2-2ii_s_0-04_moving_window_euclidean-eps-conver
+ted-to.pdf>
+Package pdftex.def Info: comparisons//Kernel_result_2-2ii_s_0-04_moving_window_
+euclidean-eps-converted-to.pdf  used on input line 45.
+(pdftex.def)             Requested size: 284.52713pt x 227.62204pt.
+Package epstopdf Info: Source file: <comparisons//Kernel_result_2-2ii_s_0-04_mo
+ving_window_supremum.eps>
+(epstopdf)                    date: 2020-12-10 16:19:47
+(epstopdf)                    size: 388317 bytes
+(epstopdf)             Output file: <comparisons//Kernel_result_2-2ii_s_0-04_mo
+ving_window_supremum-eps-converted-to.pdf>
+(epstopdf)                    date: 2020-12-10 18:07:58
+(epstopdf)                    size: 36410 bytes
+(epstopdf)             Command: <repstopdf --outfile=comparisons//Kernel_result
+_2-2ii_s_0-04_moving_window_supremum-eps-converted-to.pdf comparisons//Kernel_r
+esult_2-2ii_s_0-04_moving_window_supremum.eps>
+(epstopdf)             \includegraphics on input line 46.
+Package epstopdf Info: Output file is already uptodate.
+<comparisons//Kernel_result_2-2ii_s_0-04_moving_window_supremum-eps-converted-t
+o.pdf, id=8, 578.16pt x 462.52798pt>
+File: comparisons//Kernel_result_2-2ii_s_0-04_moving_window_supremum-eps-conver
+ted-to.pdf Graphic file (type pdf)
+<use comparisons//Kernel_result_2-2ii_s_0-04_moving_window_supremum-eps-convert
+ed-to.pdf>
+Package pdftex.def Info: comparisons//Kernel_result_2-2ii_s_0-04_moving_window_
+supremum-eps-converted-to.pdf  used on input line 46.
+(pdftex.def)             Requested size: 284.52713pt x 227.62204pt.
+Package epstopdf Info: Source file: <comparisons//Kernel_result_2-2ii_s_0-02_mo
+ving_window_euclidean.eps>
+(epstopdf)                    date: 2020-12-10 16:19:47
+(epstopdf)                    size: 381472 bytes
+(epstopdf)             Output file: <comparisons//Kernel_result_2-2ii_s_0-02_mo
+ving_window_euclidean-eps-converted-to.pdf>
+(epstopdf)                    date: 2020-12-10 18:10:20
+(epstopdf)                    size: 33648 bytes
+(epstopdf)             Command: <repstopdf --outfile=comparisons//Kernel_result
+_2-2ii_s_0-02_moving_window_euclidean-eps-converted-to.pdf comparisons//Kernel_
+result_2-2ii_s_0-02_moving_window_euclidean.eps>
+(epstopdf)             \includegraphics on input line 47.
+Package epstopdf Info: Output file is already uptodate.
+<comparisons//Kernel_result_2-2ii_s_0-02_moving_window_euclidean-eps-converted-
+to.pdf, id=9, 578.16pt x 462.52798pt>
+File: comparisons//Kernel_result_2-2ii_s_0-02_moving_window_euclidean-eps-conve
+rted-to.pdf Graphic file (type pdf)
+<use comparisons//Kernel_result_2-2ii_s_0-02_moving_window_euclidean-eps-conver
+ted-to.pdf>
+Package pdftex.def Info: comparisons//Kernel_result_2-2ii_s_0-02_moving_window_
+euclidean-eps-converted-to.pdf  used on input line 47.
+(pdftex.def)             Requested size: 284.52713pt x 227.62204pt.
+Package epstopdf Info: Source file: <comparisons//Kernel_result_2-2ii_s_0-02_mo
+ving_window_supremum.eps>
+(epstopdf)                    date: 2020-12-10 16:19:47
+(epstopdf)                    size: 383126 bytes
+(epstopdf)             Output file: <comparisons//Kernel_result_2-2ii_s_0-02_mo
+ving_window_supremum-eps-converted-to.pdf>
+(epstopdf)                    date: 2020-12-10 18:07:58
+(epstopdf)                    size: 33480 bytes
+(epstopdf)             Command: <repstopdf --outfile=comparisons//Kernel_result
+_2-2ii_s_0-02_moving_window_supremum-eps-converted-to.pdf comparisons//Kernel_r
+esult_2-2ii_s_0-02_moving_window_supremum.eps>
+(epstopdf)             \includegraphics on input line 48.
+Package epstopdf Info: Output file is already uptodate.
+<comparisons//Kernel_result_2-2ii_s_0-02_moving_window_supremum-eps-converted-t
+o.pdf, id=10, 578.16pt x 462.52798pt>
+File: comparisons//Kernel_result_2-2ii_s_0-02_moving_window_supremum-eps-conver
+ted-to.pdf Graphic file (type pdf)
+<use comparisons//Kernel_result_2-2ii_s_0-02_moving_window_supremum-eps-convert
+ed-to.pdf>
+Package pdftex.def Info: comparisons//Kernel_result_2-2ii_s_0-02_moving_window_
+supremum-eps-converted-to.pdf  used on input line 48.
+(pdftex.def)             Requested size: 284.52713pt x 227.62204pt.
+Package epstopdf Info: Source file: <comparisons//Kernel_result_2-2ii_s_0-01_mo
+ving_window_euclidean.eps>
+(epstopdf)                    date: 2020-12-10 16:19:47
+(epstopdf)                    size: 365074 bytes
+(epstopdf)             Output file: <comparisons//Kernel_result_2-2ii_s_0-01_mo
+ving_window_euclidean-eps-converted-to.pdf>
+(epstopdf)                    date: 2020-12-10 18:10:40
+(epstopdf)                    size: 30912 bytes
+(epstopdf)             Command: <repstopdf --outfile=comparisons//Kernel_result
+_2-2ii_s_0-01_moving_window_euclidean-eps-converted-to.pdf comparisons//Kernel_
+result_2-2ii_s_0-01_moving_window_euclidean.eps>
+(epstopdf)             \includegraphics on input line 49.
+Package epstopdf Info: Output file is already uptodate.
+<comparisons//Kernel_result_2-2ii_s_0-01_moving_window_euclidean-eps-converted-
+to.pdf, id=11, 578.16pt x 462.52798pt>
+File: comparisons//Kernel_result_2-2ii_s_0-01_moving_window_euclidean-eps-conve
+rted-to.pdf Graphic file (type pdf)
+<use comparisons//Kernel_result_2-2ii_s_0-01_moving_window_euclidean-eps-conver
+ted-to.pdf>
+Package pdftex.def Info: comparisons//Kernel_result_2-2ii_s_0-01_moving_window_
+euclidean-eps-converted-to.pdf  used on input line 49.
+(pdftex.def)             Requested size: 284.52713pt x 227.62204pt.
+Package epstopdf Info: Source file: <comparisons//Kernel_result_2-2ii_s_0-01_mo
+ving_window_supremum.eps>
+(epstopdf)                    date: 2020-12-10 16:19:47
+(epstopdf)                    size: 367818 bytes
+(epstopdf)             Output file: <comparisons//Kernel_result_2-2ii_s_0-01_mo
+ving_window_supremum-eps-converted-to.pdf>
+(epstopdf)                    date: 2020-12-10 18:07:59
+(epstopdf)                    size: 30874 bytes
+(epstopdf)             Command: <repstopdf --outfile=comparisons//Kernel_result
+_2-2ii_s_0-01_moving_window_supremum-eps-converted-to.pdf comparisons//Kernel_r
+esult_2-2ii_s_0-01_moving_window_supremum.eps>
+(epstopdf)             \includegraphics on input line 50.
+Package epstopdf Info: Output file is already uptodate.
+<comparisons//Kernel_result_2-2ii_s_0-01_moving_window_supremum-eps-converted-t
+o.pdf, id=12, 578.16pt x 462.52798pt>
+File: comparisons//Kernel_result_2-2ii_s_0-01_moving_window_supremum-eps-conver
+ted-to.pdf Graphic file (type pdf)
+<use comparisons//Kernel_result_2-2ii_s_0-01_moving_window_supremum-eps-convert
+ed-to.pdf>
+Package pdftex.def Info: comparisons//Kernel_result_2-2ii_s_0-01_moving_window_
+supremum-eps-converted-to.pdf  used on input line 50.
+(pdftex.def)             Requested size: 284.52713pt x 227.62204pt.
+Package epstopdf Info: Source file: <comparisons//Kernel_result_2-2ii_s_0-008_m
+oving_window_euclidean.eps>
+(epstopdf)                    date: 2020-12-10 16:19:47
+(epstopdf)                    size: 360863 bytes
+(epstopdf)             Output file: <comparisons//Kernel_result_2-2ii_s_0-008_m
+oving_window_euclidean-eps-converted-to.pdf>
+(epstopdf)                    date: 2020-12-10 18:10:59
+(epstopdf)                    size: 30754 bytes
+(epstopdf)             Command: <repstopdf --outfile=comparisons//Kernel_result
+_2-2ii_s_0-008_moving_window_euclidean-eps-converted-to.pdf comparisons//Kernel
+_result_2-2ii_s_0-008_moving_window_euclidean.eps>
+(epstopdf)             \includegraphics on input line 51.
+Package epstopdf Info: Output file is already uptodate.
+<comparisons//Kernel_result_2-2ii_s_0-008_moving_window_euclidean-eps-converted
+-to.pdf, id=13, 578.16pt x 462.52798pt>
+File: comparisons//Kernel_result_2-2ii_s_0-008_moving_window_euclidean-eps-conv
+erted-to.pdf Graphic file (type pdf)
+<use comparisons//Kernel_result_2-2ii_s_0-008_moving_window_euclidean-eps-conve
+rted-to.pdf>
+Package pdftex.def Info: comparisons//Kernel_result_2-2ii_s_0-008_moving_window
+_euclidean-eps-converted-to.pdf  used on input line 51.
+(pdftex.def)             Requested size: 284.52713pt x 227.62204pt.
+Package epstopdf Info: Source file: <comparisons//Kernel_result_2-2ii_s_0-008_m
+oving_window_supremum.eps>
+(epstopdf)                    date: 2020-12-10 16:19:47
+(epstopdf)                    size: 362501 bytes
+(epstopdf)             Output file: <comparisons//Kernel_result_2-2ii_s_0-008_m
+oving_window_supremum-eps-converted-to.pdf>
+(epstopdf)                    date: 2020-12-10 18:10:59
+(epstopdf)                    size: 30606 bytes
+(epstopdf)             Command: <repstopdf --outfile=comparisons//Kernel_result
+_2-2ii_s_0-008_moving_window_supremum-eps-converted-to.pdf comparisons//Kernel_
+result_2-2ii_s_0-008_moving_window_supremum.eps>
+(epstopdf)             \includegraphics on input line 52.
+Package epstopdf Info: Output file is already uptodate.
+<comparisons//Kernel_result_2-2ii_s_0-008_moving_window_supremum-eps-converted-
+to.pdf, id=14, 578.16pt x 462.52798pt>
+File: comparisons//Kernel_result_2-2ii_s_0-008_moving_window_supremum-eps-conve
+rted-to.pdf Graphic file (type pdf)
+<use comparisons//Kernel_result_2-2ii_s_0-008_moving_window_supremum-eps-conver
+ted-to.pdf>
+Package pdftex.def Info: comparisons//Kernel_result_2-2ii_s_0-008_moving_window
+_supremum-eps-converted-to.pdf  used on input line 52.
+(pdftex.def)             Requested size: 284.52713pt x 227.62204pt.
+Package epstopdf Info: Source file: <comparisons//Kernel_result_2-2ii_s_0-2_mov
+ing_window_euclidean.eps>
+(epstopdf)                    date: 2020-12-10 16:19:47
+(epstopdf)                    size: 390452 bytes
+(epstopdf)             Output file: <comparisons//Kernel_result_2-2ii_s_0-2_mov
+ing_window_euclidean-eps-converted-to.pdf>
+(epstopdf)                    date: 2020-12-10 18:02:11
+(epstopdf)                    size: 37037 bytes
+(epstopdf)             Command: <repstopdf --outfile=comparisons//Kernel_result
+_2-2ii_s_0-2_moving_window_euclidean-eps-converted-to.pdf comparisons//Kernel_r
+esult_2-2ii_s_0-2_moving_window_euclidean.eps>
+(epstopdf)             \includegraphics on input line 55.
+Package epstopdf Info: Output file is already uptodate.
+File: comparisons//Kernel_result_2-2ii_s_0-2_moving_window_euclidean-eps-conver
+ted-to.pdf Graphic file (type pdf)
+<use comparisons//Kernel_result_2-2ii_s_0-2_moving_window_euclidean-eps-convert
+ed-to.pdf>
+Package pdftex.def Info: comparisons//Kernel_result_2-2ii_s_0-2_moving_window_e
+uclidean-eps-converted-to.pdf  used on input line 55.
+(pdftex.def)             Requested size: 284.52713pt x 227.62204pt.
+Package epstopdf Info: Source file: <comparisons//Kernel_result_2-2ii_s_0-2_gau
+ssian_euclidean.eps>
+(epstopdf)                    date: 2020-12-10 16:19:47
+(epstopdf)                    size: 382220 bytes
+(epstopdf)             Output file: <comparisons//Kernel_result_2-2ii_s_0-2_gau
+ssian_euclidean-eps-converted-to.pdf>
+(epstopdf)                    date: 2020-12-10 18:23:18
+(epstopdf)                    size: 35170 bytes
+(epstopdf)             Command: <repstopdf --outfile=comparisons//Kernel_result
+_2-2ii_s_0-2_gaussian_euclidean-eps-converted-to.pdf comparisons//Kernel_result
+_2-2ii_s_0-2_gaussian_euclidean.eps>
+(epstopdf)             \includegraphics on input line 56.
+Package epstopdf Info: Output file is already uptodate.
+<comparisons//Kernel_result_2-2ii_s_0-2_gaussian_euclidean-eps-converted-to.pdf
+, id=15, 578.16pt x 462.52798pt>
+File: comparisons//Kernel_result_2-2ii_s_0-2_gaussian_euclidean-eps-converted-t
+o.pdf Graphic file (type pdf)
+<use comparisons//Kernel_result_2-2ii_s_0-2_gaussian_euclidean-eps-converted-to
+.pdf>
+Package pdftex.def Info: comparisons//Kernel_result_2-2ii_s_0-2_gaussian_euclid
+ean-eps-converted-to.pdf  used on input line 56.
+(pdftex.def)             Requested size: 284.52713pt x 227.62204pt.
+Package epstopdf Info: Source file: <comparisons//Kernel_result_2-2ii_s_0-1_mov
+ing_window_euclidean.eps>
+(epstopdf)                    date: 2020-12-10 16:19:47
+(epstopdf)                    size: 391220 bytes
+(epstopdf)             Output file: <comparisons//Kernel_result_2-2ii_s_0-1_mov
+ing_window_euclidean-eps-converted-to.pdf>
+(epstopdf)                    date: 2020-12-10 18:05:18
+(epstopdf)                    size: 37746 bytes
+(epstopdf)             Command: <repstopdf --outfile=comparisons//Kernel_result
+_2-2ii_s_0-1_moving_window_euclidean-eps-converted-to.pdf comparisons//Kernel_r
+esult_2-2ii_s_0-1_moving_window_euclidean.eps>
+(epstopdf)             \includegraphics on input line 57.
+Package epstopdf Info: Output file is already uptodate.
+File: comparisons//Kernel_result_2-2ii_s_0-1_moving_window_euclidean-eps-conver
+ted-to.pdf Graphic file (type pdf)
+<use comparisons//Kernel_result_2-2ii_s_0-1_moving_window_euclidean-eps-convert
+ed-to.pdf>
+Package pdftex.def Info: comparisons//Kernel_result_2-2ii_s_0-1_moving_window_e
+uclidean-eps-converted-to.pdf  used on input line 57.
+(pdftex.def)             Requested size: 284.52713pt x 227.62204pt.
+Package epstopdf Info: Source file: <comparisons//Kernel_result_2-2ii_s_0-1_gau
+ssian_euclidean.eps>
+(epstopdf)                    date: 2020-12-10 16:19:47
+(epstopdf)                    size: 384578 bytes
+(epstopdf)             Output file: <comparisons//Kernel_result_2-2ii_s_0-1_gau
+ssian_euclidean-eps-converted-to.pdf>
+(epstopdf)                    date: 2020-12-10 18:23:37
+(epstopdf)                    size: 35756 bytes
+(epstopdf)             Command: <repstopdf --outfile=comparisons//Kernel_result
+_2-2ii_s_0-1_gaussian_euclidean-eps-converted-to.pdf comparisons//Kernel_result
+_2-2ii_s_0-1_gaussian_euclidean.eps>
+(epstopdf)             \includegraphics on input line 58.
+Package epstopdf Info: Output file is already uptodate.
+<comparisons//Kernel_result_2-2ii_s_0-1_gaussian_euclidean-eps-converted-to.pdf
+, id=16, 578.16pt x 462.52798pt>
+File: comparisons//Kernel_result_2-2ii_s_0-1_gaussian_euclidean-eps-converted-t
+o.pdf Graphic file (type pdf)
+<use comparisons//Kernel_result_2-2ii_s_0-1_gaussian_euclidean-eps-converted-to
+.pdf>
+Package pdftex.def Info: comparisons//Kernel_result_2-2ii_s_0-1_gaussian_euclid
+ean-eps-converted-to.pdf  used on input line 58.
+(pdftex.def)             Requested size: 284.52713pt x 227.62204pt.
+Package epstopdf Info: Source file: <comparisons//Kernel_result_2-2ii_s_0-06_mo
+ving_window_euclidean.eps>
+(epstopdf)                    date: 2020-12-10 16:19:47
+(epstopdf)                    size: 391653 bytes
+(epstopdf)             Output file: <comparisons//Kernel_result_2-2ii_s_0-06_mo
+ving_window_euclidean-eps-converted-to.pdf>
+(epstopdf)                    date: 2020-12-10 18:09:17
+(epstopdf)                    size: 38791 bytes
+(epstopdf)             Command: <repstopdf --outfile=comparisons//Kernel_result
+_2-2ii_s_0-06_moving_window_euclidean-eps-converted-to.pdf comparisons//Kernel_
+result_2-2ii_s_0-06_moving_window_euclidean.eps>
+(epstopdf)             \includegraphics on input line 59.
+Package epstopdf Info: Output file is already uptodate.
+File: comparisons//Kernel_result_2-2ii_s_0-06_moving_window_euclidean-eps-conve
+rted-to.pdf Graphic file (type pdf)
+<use comparisons//Kernel_result_2-2ii_s_0-06_moving_window_euclidean-eps-conver
+ted-to.pdf>
+Package pdftex.def Info: comparisons//Kernel_result_2-2ii_s_0-06_moving_window_
+euclidean-eps-converted-to.pdf  used on input line 59.
+(pdftex.def)             Requested size: 284.52713pt x 227.62204pt.
+Package epstopdf Info: Source file: <comparisons//Kernel_result_2-2ii_s_0-06_ga
+ussian_euclidean.eps>
+(epstopdf)                    date: 2020-12-10 16:19:47
+(epstopdf)                    size: 390640 bytes
+(epstopdf)             Output file: <comparisons//Kernel_result_2-2ii_s_0-06_ga
+ussian_euclidean-eps-converted-to.pdf>
+(epstopdf)                    date: 2020-12-10 18:24:38
+(epstopdf)                    size: 37408 bytes
+(epstopdf)             Command: <repstopdf --outfile=comparisons//Kernel_result
+_2-2ii_s_0-06_gaussian_euclidean-eps-converted-to.pdf comparisons//Kernel_resul
+t_2-2ii_s_0-06_gaussian_euclidean.eps>
+(epstopdf)             \includegraphics on input line 60.
+Package epstopdf Info: Output file is already uptodate.
+<comparisons//Kernel_result_2-2ii_s_0-06_gaussian_euclidean-eps-converted-to.pd
+f, id=17, 578.16pt x 462.52798pt>
+File: comparisons//Kernel_result_2-2ii_s_0-06_gaussian_euclidean-eps-converted-
+to.pdf Graphic file (type pdf)
+<use comparisons//Kernel_result_2-2ii_s_0-06_gaussian_euclidean-eps-converted-t
+o.pdf>
+Package pdftex.def Info: comparisons//Kernel_result_2-2ii_s_0-06_gaussian_eucli
+dean-eps-converted-to.pdf  used on input line 60.
+(pdftex.def)             Requested size: 284.52713pt x 227.62204pt.
+Package epstopdf Info: Source file: <comparisons//Kernel_result_2-2ii_s_0-04_mo
+ving_window_euclidean.eps>
+(epstopdf)                    date: 2020-12-10 16:19:47
+(epstopdf)                    size: 387945 bytes
+(epstopdf)             Output file: <comparisons//Kernel_result_2-2ii_s_0-04_mo
+ving_window_euclidean-eps-converted-to.pdf>
+(epstopdf)                    date: 2020-12-10 18:09:17
+(epstopdf)                    size: 36412 bytes
+(epstopdf)             Command: <repstopdf --outfile=comparisons//Kernel_result
+_2-2ii_s_0-04_moving_window_euclidean-eps-converted-to.pdf comparisons//Kernel_
+result_2-2ii_s_0-04_moving_window_euclidean.eps>
+(epstopdf)             \includegraphics on input line 61.
+Package epstopdf Info: Output file is already uptodate.
+File: comparisons//Kernel_result_2-2ii_s_0-04_moving_window_euclidean-eps-conve
+rted-to.pdf Graphic file (type pdf)
+<use comparisons//Kernel_result_2-2ii_s_0-04_moving_window_euclidean-eps-conver
+ted-to.pdf>
+Package pdftex.def Info: comparisons//Kernel_result_2-2ii_s_0-04_moving_window_
+euclidean-eps-converted-to.pdf  used on input line 61.
+(pdftex.def)             Requested size: 284.52713pt x 227.62204pt.
+Package epstopdf Info: Source file: <comparisons//Kernel_result_2-2ii_s_0-04_ga
+ussian_euclidean.eps>
+(epstopdf)                    date: 2020-12-10 16:19:47
+(epstopdf)                    size: 390836 bytes
+(epstopdf)             Output file: <comparisons//Kernel_result_2-2ii_s_0-04_ga
+ussian_euclidean-eps-converted-to.pdf>
+(epstopdf)                    date: 2020-12-10 18:24:38
+(epstopdf)                    size: 37887 bytes
+(epstopdf)             Command: <repstopdf --outfile=comparisons//Kernel_result
+_2-2ii_s_0-04_gaussian_euclidean-eps-converted-to.pdf comparisons//Kernel_resul
+t_2-2ii_s_0-04_gaussian_euclidean.eps>
+(epstopdf)             \includegraphics on input line 62.
+Package epstopdf Info: Output file is already uptodate.
+<comparisons//Kernel_result_2-2ii_s_0-04_gaussian_euclidean-eps-converted-to.pd
+f, id=18, 578.16pt x 462.52798pt>
+File: comparisons//Kernel_result_2-2ii_s_0-04_gaussian_euclidean-eps-converted-
+to.pdf Graphic file (type pdf)
+<use comparisons//Kernel_result_2-2ii_s_0-04_gaussian_euclidean-eps-converted-t
+o.pdf>
+Package pdftex.def Info: comparisons//Kernel_result_2-2ii_s_0-04_gaussian_eucli
+dean-eps-converted-to.pdf  used on input line 62.
+(pdftex.def)             Requested size: 284.52713pt x 227.62204pt.
+Package epstopdf Info: Source file: <comparisons//Kernel_result_2-2ii_s_0-02_mo
+ving_window_euclidean.eps>
+(epstopdf)                    date: 2020-12-10 16:19:47
+(epstopdf)                    size: 381472 bytes
+(epstopdf)             Output file: <comparisons//Kernel_result_2-2ii_s_0-02_mo
+ving_window_euclidean-eps-converted-to.pdf>
+(epstopdf)                    date: 2020-12-10 18:10:20
+(epstopdf)                    size: 33648 bytes
+(epstopdf)             Command: <repstopdf --outfile=comparisons//Kernel_result
+_2-2ii_s_0-02_moving_window_euclidean-eps-converted-to.pdf comparisons//Kernel_
+result_2-2ii_s_0-02_moving_window_euclidean.eps>
+(epstopdf)             \includegraphics on input line 63.
+Package epstopdf Info: Output file is already uptodate.
+File: comparisons//Kernel_result_2-2ii_s_0-02_moving_window_euclidean-eps-conve
+rted-to.pdf Graphic file (type pdf)
+<use comparisons//Kernel_result_2-2ii_s_0-02_moving_window_euclidean-eps-conver
+ted-to.pdf>
+Package pdftex.def Info: comparisons//Kernel_result_2-2ii_s_0-02_moving_window_
+euclidean-eps-converted-to.pdf  used on input line 63.
+(pdftex.def)             Requested size: 284.52713pt x 227.62204pt.
+Package epstopdf Info: Source file: <comparisons//Kernel_result_2-2ii_s_0-02_ga
+ussian_euclidean.eps>
+(epstopdf)                    date: 2020-12-10 16:19:47
+(epstopdf)                    size: 389541 bytes
+(epstopdf)             Output file: <comparisons//Kernel_result_2-2ii_s_0-02_ga
+ussian_euclidean-eps-converted-to.pdf>
+(epstopdf)                    date: 2020-12-10 18:24:39
+(epstopdf)                    size: 38740 bytes
+(epstopdf)             Command: <repstopdf --outfile=comparisons//Kernel_result
+_2-2ii_s_0-02_gaussian_euclidean-eps-converted-to.pdf comparisons//Kernel_resul
+t_2-2ii_s_0-02_gaussian_euclidean.eps>
+(epstopdf)             \includegraphics on input line 64.
+Package epstopdf Info: Output file is already uptodate.
+<comparisons//Kernel_result_2-2ii_s_0-02_gaussian_euclidean-eps-converted-to.pd
+f, id=19, 578.16pt x 462.52798pt>
+File: comparisons//Kernel_result_2-2ii_s_0-02_gaussian_euclidean-eps-converted-
+to.pdf Graphic file (type pdf)
+<use comparisons//Kernel_result_2-2ii_s_0-02_gaussian_euclidean-eps-converted-t
+o.pdf>
+Package pdftex.def Info: comparisons//Kernel_result_2-2ii_s_0-02_gaussian_eucli
+dean-eps-converted-to.pdf  used on input line 64.
+(pdftex.def)             Requested size: 284.52713pt x 227.62204pt.
+Package epstopdf Info: Source file: <comparisons//Kernel_result_2-2ii_s_0-01_mo
+ving_window_euclidean.eps>
+(epstopdf)                    date: 2020-12-10 16:19:47
+(epstopdf)                    size: 365074 bytes
+(epstopdf)             Output file: <comparisons//Kernel_result_2-2ii_s_0-01_mo
+ving_window_euclidean-eps-converted-to.pdf>
+(epstopdf)                    date: 2020-12-10 18:10:40
+(epstopdf)                    size: 30912 bytes
+(epstopdf)             Command: <repstopdf --outfile=comparisons//Kernel_result
+_2-2ii_s_0-01_moving_window_euclidean-eps-converted-to.pdf comparisons//Kernel_
+result_2-2ii_s_0-01_moving_window_euclidean.eps>
+(epstopdf)             \includegraphics on input line 65.
+Package epstopdf Info: Output file is already uptodate.
+File: comparisons//Kernel_result_2-2ii_s_0-01_moving_window_euclidean-eps-conve
+rted-to.pdf Graphic file (type pdf)
+<use comparisons//Kernel_result_2-2ii_s_0-01_moving_window_euclidean-eps-conver
+ted-to.pdf>
+Package pdftex.def Info: comparisons//Kernel_result_2-2ii_s_0-01_moving_window_
+euclidean-eps-converted-to.pdf  used on input line 65.
+(pdftex.def)             Requested size: 284.52713pt x 227.62204pt.
+Package epstopdf Info: Source file: <comparisons//Kernel_result_2-2ii_s_0-01_ga
+ussian_euclidean.eps>
+(epstopdf)                    date: 2020-12-10 16:19:47
+(epstopdf)                    size: 387865 bytes
+(epstopdf)             Output file: <comparisons//Kernel_result_2-2ii_s_0-01_ga
+ussian_euclidean-eps-converted-to.pdf>
+(epstopdf)                    date: 2020-12-10 18:24:40
+(epstopdf)                    size: 39813 bytes
+(epstopdf)             Command: <repstopdf --outfile=comparisons//Kernel_result
+_2-2ii_s_0-01_gaussian_euclidean-eps-converted-to.pdf comparisons//Kernel_resul
+t_2-2ii_s_0-01_gaussian_euclidean.eps>
+(epstopdf)             \includegraphics on input line 66.
+Package epstopdf Info: Output file is already uptodate.
+<comparisons//Kernel_result_2-2ii_s_0-01_gaussian_euclidean-eps-converted-to.pd
+f, id=20, 578.16pt x 462.52798pt>
+File: comparisons//Kernel_result_2-2ii_s_0-01_gaussian_euclidean-eps-converted-
+to.pdf Graphic file (type pdf)
+<use comparisons//Kernel_result_2-2ii_s_0-01_gaussian_euclidean-eps-converted-t
+o.pdf>
+Package pdftex.def Info: comparisons//Kernel_result_2-2ii_s_0-01_gaussian_eucli
+dean-eps-converted-to.pdf  used on input line 66.
+(pdftex.def)             Requested size: 284.52713pt x 227.62204pt.
+Package epstopdf Info: Source file: <comparisons//Kernel_result_2-2ii_s_0-008_m
+oving_window_euclidean.eps>
+(epstopdf)                    date: 2020-12-10 16:19:47
+(epstopdf)                    size: 360863 bytes
+(epstopdf)             Output file: <comparisons//Kernel_result_2-2ii_s_0-008_m
+oving_window_euclidean-eps-converted-to.pdf>
+(epstopdf)                    date: 2020-12-10 18:10:59
+(epstopdf)                    size: 30754 bytes
+(epstopdf)             Command: <repstopdf --outfile=comparisons//Kernel_result
+_2-2ii_s_0-008_moving_window_euclidean-eps-converted-to.pdf comparisons//Kernel
+_result_2-2ii_s_0-008_moving_window_euclidean.eps>
+(epstopdf)             \includegraphics on input line 67.
+Package epstopdf Info: Output file is already uptodate.
+File: comparisons//Kernel_result_2-2ii_s_0-008_moving_window_euclidean-eps-conv
+erted-to.pdf Graphic file (type pdf)
+<use comparisons//Kernel_result_2-2ii_s_0-008_moving_window_euclidean-eps-conve
+rted-to.pdf>
+Package pdftex.def Info: comparisons//Kernel_result_2-2ii_s_0-008_moving_window
+_euclidean-eps-converted-to.pdf  used on input line 67.
+(pdftex.def)             Requested size: 284.52713pt x 227.62204pt.
+Package epstopdf Info: Source file: <comparisons//Kernel_result_2-2ii_s_0-008_g
+aussian_euclidean.eps>
+(epstopdf)                    date: 2020-12-10 16:19:47
+(epstopdf)                    size: 386860 bytes
+(epstopdf)             Output file: <comparisons//Kernel_result_2-2ii_s_0-008_g
+aussian_euclidean-eps-converted-to.pdf>
+(epstopdf)                    date: 2020-12-10 18:24:40
+(epstopdf)                    size: 40668 bytes
+(epstopdf)             Command: <repstopdf --outfile=comparisons//Kernel_result
+_2-2ii_s_0-008_gaussian_euclidean-eps-converted-to.pdf comparisons//Kernel_resu
+lt_2-2ii_s_0-008_gaussian_euclidean.eps>
+(epstopdf)             \includegraphics on input line 68.
+Package epstopdf Info: Output file is already uptodate.
+<comparisons//Kernel_result_2-2ii_s_0-008_gaussian_euclidean-eps-converted-to.p
+df, id=21, 578.16pt x 462.52798pt>
+File: comparisons//Kernel_result_2-2ii_s_0-008_gaussian_euclidean-eps-converted
+-to.pdf Graphic file (type pdf)
+<use comparisons//Kernel_result_2-2ii_s_0-008_gaussian_euclidean-eps-converted-
+to.pdf>
+Package pdftex.def Info: comparisons//Kernel_result_2-2ii_s_0-008_gaussian_eucl
+idean-eps-converted-to.pdf  used on input line 68.
+(pdftex.def)             Requested size: 284.52713pt x 227.62204pt.
+
+Overfull \hbox (61.34802pt too wide) in paragraph at lines 33--72
+| [] |  [] 
+ []
+
+
+Overfull \hbox (61.34802pt too wide) in paragraph at lines 33--72
+| [] |  [] 
+ []
+
+
+Overfull \hbox (61.34802pt too wide) in paragraph at lines 33--72
+| [] |  [] 
+ []
+
+
+Overfull \hbox (61.34802pt too wide) in paragraph at lines 33--72
+| [] |  [] 
+ []
+
+
+Overfull \hbox (61.34802pt too wide) in paragraph at lines 33--72
+| [] |  [] 
+ []
+
+
+Overfull \hbox (61.34802pt too wide) in paragraph at lines 33--72
+| [] |  []
+ []
+
+
+Overfull \hbox (61.34802pt too wide) in paragraph at lines 33--72
+| [] |  []
+ []
+
+
+Overfull \hbox (61.34802pt too wide) in paragraph at lines 33--72
+| [] |  []
+ []
+
+
+Overfull \hbox (61.34802pt too wide) in paragraph at lines 33--72
+| [] |  []
+ []
+
+
+Overfull \hbox (61.34802pt too wide) in paragraph at lines 33--72
+| [] |  [] 
+ []
+
+
+Overfull \hbox (61.34802pt too wide) in paragraph at lines 33--72
+| [] |  [] 
+ []
+
+
+Overfull \hbox (61.34802pt too wide) in paragraph at lines 33--72
+| [] |  [] 
+ []
+
+
+Overfull \hbox (61.34802pt too wide) in paragraph at lines 33--72
+| [] |  [] 
+ []
+
+
+Overfull \hbox (61.34802pt too wide) in paragraph at lines 33--72
+| [] |  [] 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 33--72
 
  []
 
 [1
 
-{/usr/local/texlive/2018/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
-(./NPS_Blatt6_CeylanWangZeng.aux) ) 
+{/usr/local/texlive/2018/texmf-var/fonts/map/pdftex/updmap/pdftex.map} <./compa
+risons//Kernel_result_2-2ii_s_0-2_moving_window_euclidean-eps-converted-to.pdf>
+ <./comparisons//Kernel_result_2-2ii_s_0-2_moving_window_supremum-eps-converted
+-to.pdf>] [2 <./comparisons//Kernel_result_2-2ii_s_0-1_moving_window_euclidean-
+eps-converted-to.pdf> <./comparisons//Kernel_result_2-2ii_s_0-1_moving_window_s
+upremum-eps-converted-to.pdf> <./comparisons//Kernel_result_2-2ii_s_0-06_moving
+_window_euclidean-eps-converted-to.pdf> <./comparisons//Kernel_result_2-2ii_s_0
+-06_moving_window_supremum-eps-converted-to.pdf> <./comparisons//Kernel_result_
+2-2ii_s_0-04_moving_window_euclidean-eps-converted-to.pdf> <./comparisons//Kern
+el_result_2-2ii_s_0-04_moving_window_supremum-eps-converted-to.pdf>] [3 <./comp
+arisons//Kernel_result_2-2ii_s_0-02_moving_window_euclidean-eps-converted-to.pd
+f> <./comparisons//Kernel_result_2-2ii_s_0-02_moving_window_supremum-eps-conver
+ted-to.pdf> <./comparisons//Kernel_result_2-2ii_s_0-01_moving_window_euclidean-
+eps-converted-to.pdf> <./comparisons//Kernel_result_2-2ii_s_0-01_moving_window_
+supremum-eps-converted-to.pdf> <./comparisons//Kernel_result_2-2ii_s_0-008_movi
+ng_window_euclidean-eps-converted-to.pdf> <./comparisons//Kernel_result_2-2ii_s
+_0-008_moving_window_supremum-eps-converted-to.pdf>] [4 <./comparisons//Kernel_
+result_2-2ii_s_0-2_gaussian_euclidean-eps-converted-to.pdf> <./comparisons//Ker
+nel_result_2-2ii_s_0-1_gaussian_euclidean-eps-converted-to.pdf> <./comparisons/
+/Kernel_result_2-2ii_s_0-06_gaussian_euclidean-eps-converted-to.pdf>]
+[5 <./comparisons//Kernel_result_2-2ii_s_0-04_gaussian_euclidean-eps-converted-
+to.pdf> <./comparisons//Kernel_result_2-2ii_s_0-02_gaussian_euclidean-eps-conve
+rted-to.pdf> <./comparisons//Kernel_result_2-2ii_s_0-01_gaussian_euclidean-eps-
+converted-to.pdf>] [6 <./comparisons//Kernel_result_2-2ii_s_0-008_gaussian_eucl
+idean-eps-converted-to.pdf>] (./NPS_Blatt6_CeylanWangZeng.aux) ) 
 Here is how much of TeX's memory you used:
- 3849 strings out of 492649
- 51634 string characters out of 6129622
- 128681 words of memory out of 5000000
- 7651 multiletter control sequences out of 15000+600000
- 12809 words of font info for 38 fonts, out of 8000000 for 9000
+ 3975 strings out of 492649
+ 60778 string characters out of 6129622
+ 140681 words of memory out of 5000000
+ 7750 multiletter control sequences out of 15000+600000
+ 14508 words of font info for 46 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 42i,6n,27p,319b,203s stack positions out of 5000i,500n,10000p,200000b,80000s
-{/usr/local/texlive/2018/texmf-dist/fonts/en
-c/dvips/cm-super/cm-super-t1.enc}</usr/local/texlive/2018/texmf-dist/fonts/type
-1/public/cm-super/sfbx1440.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/
-public/cm-super/sfrm1000.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/pu
-blic/cm-super/sfrm1200.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/publ
-ic/cm-super/sfrm1728.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public
-/cm-super/sfti1000.pfb>
-Output written on NPS_Blatt6_CeylanWangZeng.pdf (1 page, 52524 bytes).
+ 42i,8n,27p,551b,230s stack positions out of 5000i,500n,10000p,200000b,80000s
+{/usr/local/tex
+live/2018/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc}</usr/local/texli
+ve/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/texliv
+e/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/local/texlive/
+2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/20
+18/texmf-dist/fonts/type1/public/amsfonts/cm/cmr5.pfb></usr/local/texlive/2018/
+texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/local/texlive/2018/tex
+mf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2018/texm
+f-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/local/texlive/2018/texmf-
+dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb></usr/local/texlive/2018/te
+xmf-dist/fonts/type1/public/cm-super/sfbx1440.pfb></usr/local/texlive/2018/texm
+f-dist/fonts/type1/public/cm-super/sfrm1000.pfb></usr/local/texlive/2018/texmf-
+dist/fonts/type1/public/cm-super/sfrm1200.pfb></usr/local/texlive/2018/texmf-di
+st/fonts/type1/public/cm-super/sfrm1728.pfb></usr/local/texlive/2018/texmf-dist
+/fonts/type1/public/cm-super/sfti1000.pfb>
+Output written on NPS_Blatt6_CeylanWangZeng.pdf (6 pages, 824291 bytes).
 PDF statistics:
- 29 PDF objects out of 1000 (max. 8388607)
- 20 compressed objects within 1 object stream
+ 807 PDF objects out of 1000 (max. 8388607)
+ 138 compressed objects within 2 object streams
  0 named destinations out of 1000 (max. 500000)
- 1 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 106 words of extra memory for PDF output out of 10000 (max. 10000000)
 
