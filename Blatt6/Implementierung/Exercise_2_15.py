@@ -98,21 +98,22 @@ def compute_store_rough_L1_A2_22():
 
 
 ################   Execution area    ################
-
+'''
 # Generating plots
 kernel_functions = ['moving_window', 'triangular', 'epanechnikov', 'gaussian']
 norms = ['euclidean','supremum']
-'''
+
 for kernel_funtion in kernel_functions:
     for norm in norms:
         kernel_result_for_2_2_ii( s, kernel_funtion , norm, plot=True, output=True )
-
+'''
 ss = [0.2, 0.1, 0.08, 0.06, 0.04, 0.03, 0.02, 0.01, 0.008 ]
+sss = [0.006,0.004,0.002]
 norms = ['euclidean','supremum']
-for s in ss:
+for s in sss:
     for norm in norms:
         kernel_result_for_2_2_ii( s, 'moving_window' , norm, plot=True, output=True )
         kernel_result_for_2_2_ii( s, 'gaussian' , norm, plot=True, output=True )
-'''
 
-compute_store_rough_L1_A2_22()
+
+#compute_store_rough_L1_A2_22()
