@@ -1,0 +1,50 @@
+\documentclass{article}
+
+\usepackage[utf8]{inputenc}
+\usepackage[ngerman]{babel}
+\usepackage[T1]{fontenc}
+
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{amsthm}
+\usepackage{bbm}
+
+\usepackage{geometry}
+\geometry{a4paper,left=3cm,right=3cm,top=2.5cm,bottom=2.5cm}
+
+\renewcommand{\baselinestretch}{1.45} 
+\usepackage{setspace}
+
+\usepackage{multicol}
+
+\usepackage{graphicx} %use graph format
+\usepackage{epstopdf}
+
+
+\title{Non-Paramatric Statistics Exercise 5}
+\author{Osman Ceylan, Jiahui Wang, Zhuoyao Zeng}
+\date{\today}
+
+\begin{document}
+\maketitle
+
+\section*{Exercise 2.6} \vspace*{-1em}
+\textit{Solution:} \\
+$h$ is the $\lambda ^d$-density of $\mathbf{P} \ \Leftrightarrow \ \forall
+ B \in \mathcal{B}: \mathbf{P}(B) = \displaystyle{ \int_B h \, \text{d}\lambda ^d  }$.\\
+$h$ is $\alpha$-Hölder continuous $\Rightarrow \ \exists\, |h|_{\alpha} \in \mathbb{R}_{\geq 0} \forall x_1, x_2 \in \mathbb{R}^d: |h(x_1)-h(x_2)|\leq |h|_{\alpha}\cdot ||x_1 - x_2||^{\alpha}$.\\
+Consider the map $\mathcal{T}: \mathbb{R}^d \rightarrow \mathbb{R}^d : x \mapsto t\cdot x$. \\
+$\mathcal{T}$ is a diffeomorphism with $det(J_{\mathcal{T}}) = det( t \cdot 1^{d \times d} ) = t^d$. \\
+Now consider $\mathbf{P}_t$.\\
+$\forall B \in \mathcal{B}: \mathbf{P}_t(B) \overset{\text{def}}{=} \mathbf{P}(tB) = \displaystyle{ \int_{tB} h \, \text{d}\lambda ^d = \int_{\mathcal{T}(B)} h \, \text{d}\lambda ^d = \int_B h \circ \mathcal{T} \cdot det(J_{\mathcal{T}})  \, \text{d}\lambda ^d  =  \int_B t^d \cdot h \circ \mathcal{T}   \, \text{d}\lambda ^d    } $.\\
+$\Rightarrow \ h_t = t^d \cdot h \circ \mathcal{T}$.\\
+Now we compare $|h|_{\alpha}^{ \frac{d}{2\alpha + d} } \cdot \big( \lambda ^d (\text{supp}\,h)  \big)^{ \frac{\alpha + d}{2 \alpha + d} } $ and $|h_t|_{\alpha}^{ \frac{d}{2\alpha + d} } \cdot \big( \lambda ^d (\text{supp}\,h_t)  \big)^{ \frac{\alpha + d}{2 \alpha + d} } $ by firstly comparing the terms under exponents. \\
+$\forall x \in \text{supp}\,h_t : tx \in \text{supp}\,h \ \Rightarrow \ \lambda ^d (\text{supp}\,h_t) = t^{-d} \cdot \lambda ^d (\text{supp}\, h)$. \vspace*{0.8em} \\
+$|h|_{\alpha} = \sup_{x \neq x' \in \mathbb{R}^d} \frac{|h_t(x)-h_t(x')|}{||x-x||^{\alpha}} =\sup_{x \neq x' \in \mathbb{R}^d} \frac{  t^d \, |h(tx)-h(tx')|}{  t^{-1} || tx-tx' || ^{\alpha}} $\vspace*{0.5em} \\
+\hspace*{4.8cm}$= t^{\alpha + d} \sup_{x \neq x' \in \mathbb{R}^d} \frac{ |h(tx)-h(tx')|}{ || tx-tx' || ^{\alpha}} = t^{\alpha + d} |h|_{\alpha} $. \vspace*{0.5em} \\
+$\Rightarrow \ |h_t|_{\alpha}^{ \frac{d}{2\alpha + d} } \cdot \big( \lambda ^d (\text{supp}\,h_t)  \big)^{ \frac{\alpha + d}{2 \alpha + d} } = \big(t^{\alpha + d} \cdot |h|_{\alpha} \big) ^{ \frac{d}{2\alpha + d} } \cdot \big( t^{-d} \cdot  \lambda ^d (\text{supp}\,h)  \big)^{ \frac{\alpha + d}{2 \alpha + d} } = |h|_{\alpha}^{ \frac{d}{2\alpha + d} } \cdot \big( \lambda ^d (\text{supp}\,h)  \big)^{ \frac{\alpha + d}{2 \alpha + d} }  $.\vspace*{1em}  \\
+$\Rightarrow |h|_{\alpha}^{ \frac{d}{2\alpha + d} } \cdot \big( \lambda ^d (\text{supp}\,h)  \big)^{ \frac{\alpha + d}{2 \alpha + d} } $ is invariant under scaling. 
+
+
+
+\end{document}
