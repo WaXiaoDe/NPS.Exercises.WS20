@@ -11,8 +11,8 @@ def PositionFinding(point,origin,grid_length):
     o1,o2 = origin
     n1 = math.floor((x-o1)/grid_length)
     n2 = math.floor((y-o2)/grid_length)
-    n1 = o1 + (n1+0.5)*grid_length
-    n2 = o1 + (n2+0.5)*grid_length
+    n1 = o1 + (n1)*grid_length#(n1+0.5)*grid_length
+    n2 = o1 + (n2)*grid_length #(n2+0.5)*grid_length
     return (n1,n2)
 
 def Histrogram(data,grid_length,origin=(0,0),plot=False):
@@ -64,25 +64,84 @@ def Histrogram(data,grid_length,origin=(0,0),plot=False):
         plt.colorbar(a)
         #plt.savefig(name + "-s"+str(grid_length)+'.eps',dpi = fig.dpi)
         plt.show()
-    return point_in_grid
+    
+    def h_D_s(x):
+        p = PositionFinding(x,origin, grid_length)
+        if p in point_in_grid.keys():
+            return point_in_grid[p]
+        else:
+            return 0
+
+    return h_D_s
 
 
+
+def range_data(data):
+    X = []
+    Y = []
+    for p in data:
+        X.append(p[0])
+        Y.append(p[1])
+    return [math.ceil(max(X)),math.floor(min(X)),math.ceil(max(Y)),math.floor(min(Y))]
+
+def grid_generate(origin, s, range_list):
+    x_range = range_list[0]-range_list[1]
+    y_range = range_list[2]-range_list[3]
+    X = []
+    Y = []
+    for i in range(round(x_range/s)+1):
+        X.append(i/round(x_range/s)*x_range+range_list[1])
+    for i in range(round(y_range)+1):
+        Y.append(i/round(y_range)*y_range+range_list[3])
+    points = []
+    for x in X:
+        for y in Y:
+            points.append([x,y])
+    print('points',len(points))
+    return points
+
+
+
+def approx_L1(h,hh, D, s, origin):
+    data_range = range_data(D)
+    points = grid_generate(origin,s,data_range)
+    summe = 0
+    for p in points:
+        summe += abs(h(p)-hh(p))*s*s
+    return summe 
+
+
+def h_2_2_ii(coord):
+    if coord[0]**2 + coord[1]**2 < 1:
+        return 1/math.pi
+    else:
+        return 0
+    
 ##############################################################################
 
 # Parameters
 origin = (0,0)
-#grid_length = 3
-#data = 'i'
 grid_length = 0.01
-data = 'ii'
+#data_name = 'i'
+data_name = 'ii'
+
+#print(Histrogram(data,grid_length,origin,plot=False))
 
 
-print(Histrogram(data,grid_length,origin,plot=False))
 
 
 
-
-
+hh = Histrogram(data_name,grid_length,origin,plot=False)
+data = af.read_data_without_label('Exercise2.2_ii-30000.csv')
+output_list=[]
+R = []
+S = [1,0.5,0.25,0.1,0.075,0.05,0.025,0.01,0.0075,0.005,0.0025,0.001,0.00075,0.0005,0.00025,0.0001,0.000075,0.00005,0.000025,0.00001]
+for s in S:
+    r = approx_L1(h_2_2_ii,hh, data, s, origin)
+    output_list.append([s,r])
+    print(s,r)
+    R.append(r)
+af.writeCsv('ii_approx_L1_result.csv',output_list)
 
 
 
