@@ -118,4 +118,6 @@ for s in sss:
         kernel_result_for_2_2_ii( s, 'gaussian' , norm, plot=True, output=True )
 '''
 
-compute_store_rough_L1_A2_22()
+#compute_store_rough_L1_A2_22()
+
+print(af.grid_for_2_2(50))

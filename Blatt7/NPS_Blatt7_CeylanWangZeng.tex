@@ -1,0 +1,70 @@
+\documentclass{article}
+
+\usepackage[utf8]{inputenc}
+\usepackage[ngerman]{babel}
+\usepackage[T1]{fontenc}
+
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{amsthm}
+\usepackage{bbm}
+
+\usepackage{geometry}
+\geometry{a4paper,left=3cm,right=3cm,top=2.5cm,bottom=2.5cm}
+
+\renewcommand{\baselinestretch}{1.45} 
+\usepackage{setspace}
+
+\usepackage{multicol}
+
+\usepackage{graphicx} %use graph format
+\usepackage{epstopdf}
+
+
+\title{Non-Paramatric Statistics Exercise 7}
+\author{Osman Ceylan, Jiahui Wang, Zhuoyao Zeng}
+\date{\today}
+
+\begin{document}
+\maketitle
+
+\section*{Exercise 2.16} \vspace*{-1em}
+Show that normal and Cahchy distributions on $\mathbb{R}$ satisfy (2.2.23). Compare the resulting approximation error bounds of Example 2.2.19 with those obtained by Example 2.2.18. \\
+\textit{Solution:} \\
+Fix arbitrary $\sigma \in \mathbb{R}_{>0}$ and $\mu \in \mathbb{R}$.\\
+The density function of the normal distribution with respect to $\mu, \sigma$ is $h_{\mathcal{N}}(x) = \frac{1}{\sqrt{2 \pi \sigma ^2}} \text{exp}(- \frac{(x-\mu)^2}{2 \sigma ^2}) $. \vspace*{-1.4em} \\
+The density function of the Cauchy distribution with respect to $\mu, \sigma$ is $h_{C}(x) = \frac{1}{ \pi }  \frac{ \sigma }{  \sigma ^2 + (x-\mu)^2  } $.  \vspace*{0.5em} \\
+We observe that the density functions of both distributions are symmetric with respect to $x=\mu$. So, we firstly consider the general case, meaning that $h$ is the density of either distributions.\\ 
+Also fix an arbitrary $s\in (0,1]$ and consider the partition: \\
+\indent \indent \indent  \indent \indent \indent  $\mathbb{R} = ( -\infty, \mu - s) \sqcup [ \mu - s , \mu  )\sqcup [ \mu , \mu + s  ] \sqcup ( \mu + s , \infty )$.\\
+For $x \in (\mu + s , \infty): \omega (h,x,s) = \sup_{x' \in B(x,s) } | h(x)-h(x') | \leq h(x-s) - h(x+s) $.  \vspace*{0.5em} \\
+$\Rightarrow \ \displaystyle{ \int_{ ( \mu + s , \infty ) }  \omega (h,x,s)  \, \text{d}\lambda(x) \leq \int_{ ( \mu + s , \infty ) } h(x-s) - h(x+s)  \, \text{d}\lambda(x)  = \mathbf{P}( h\leq \mu + 2s )   - \frac{1}{2} }  $.   \vspace*{0.5em} \\
+For $x \in  [ \mu , \mu + s  ] :  \omega (h,x,s) = \sup_{x' \in B(x,s) } | h(x)-h(x') | \leq h(\mu) - h(x+s) $.  \vspace*{0.5em} \\
+$\Rightarrow \ \displaystyle{ \int_{ [ \mu , \mu + s  ] }  \omega (h,x,s)  \, \text{d}\lambda(x) \leq \int_{ [ \mu  , \mu +s  ] } h(\mu) - h(x+s)  \, \text{d}\lambda(x)  =  s\cdot h(\mu) - (\mathbf{P}(x\leq \mu - 2s)  - \mathbf{P}( x\leq \mu + s)    )  }  $.   \vspace*{-1em}  \\
+For $x \in  [ \mu -s , \mu   ] :  \omega (h,x,s) = \sup_{x' \in B(x,s) } | h(x)-h(x') | \leq h(\mu) - h(x-s) $.  \vspace*{0.5em} \\
+$\Rightarrow \ \displaystyle{ \int_{ [ \mu - s , \mu   ] }  \omega (h,x,s)  \, \text{d}\lambda(x) \leq \int_{ [ \mu -s , \mu  ] } h(\mu) - h(x+s)  \, \text{d}\lambda(x)  =  s\cdot h(\mu) - (\mathbf{P}( x\leq \mu - s)  - \mathbf{P}( x \leq \mu - 2s)    )  }  $.   \vspace*{-1em}  \\
+For $x \in (-  \infty , \mu - s ): \omega (h,x,s) = \sup_{x' \in B(x,s) } | h(x)-h(x') | \leq h(x+s) - h(x-s) $.  \vspace*{0.5em} \\
+$\Rightarrow \ \displaystyle{ \int_{ (-  \infty , \mu - s ) }  \omega (h,x,s)  \, \text{d}\lambda(x) \leq \int_{ ((-  \infty , \mu - s ) } h(x+s) - h(x-s)  \, \text{d}\lambda(x)  =  \frac{1}{2} - \mathbf{P}( x\leq \mu - 2s)      }  $.   \vspace*{0.5em}  \\
+Thus, we obtain in the general case:  \vspace*{0.5em}  \\
+$ \displaystyle{ \int_{ \mathbb{R} }  \omega (h,x,s)  \, \text{d}\lambda(x) = \int_{( -\infty, \mu - s) \sqcup [ \mu - s , \mu  )\sqcup [ \mu , \mu + s  ] \sqcup ( \mu + s , \infty )} \omega (h,x,s)  \, \text{d}\lambda(x) }$  \vspace*{0.7em} \\
+\hspace*{2.9cm}$  \leq   2h(\mu)\cdot s + \mathbf{P}( \mu-s \leq x \leq \mu + s)   $  \vspace*{0.5em} \\
+\hspace*{2.9cm}$= 2h(\mu)\cdot s + \displaystyle{ \int_{ [\mu-s, \mu+s] } h(x) \, \text{d}\lambda(x)    }  $.   \vspace*{0.5em} \\
+\hspace*{2.9cm}$\leq 2h(\mu)\cdot s + \displaystyle{ \int_{ [\mu-s, \mu+s] } \text{sup}_{x'\in [\mu-s,\mu +s]} h(x') \, \text{d}\lambda(x)    }  $.   \vspace*{0.5em} \\
+\hspace*{2.9cm}$= 4h(\mu)\cdot s  $.  \\
+Now we consider the specific cases where $h = h_{\mathcal{N}}$ or $h = h_{C}$.\\
+For $h(x) = h_{\mathcal{N}}(x)  = \frac{1}{\sqrt{2 \pi \sigma ^2}} \text{exp}(- \frac{(x-\mu)^2}{2 \sigma ^2}) $:   \vspace*{0.5em}  $ \displaystyle{ \int_{ \mathbb{R} }  \omega (h_{\mathcal{N}},x,s)  \, \text{d}\lambda(x) } \leq 4h_{\mathcal{N}}(\mu)\cdot s =  \frac{4}{\sqrt{2 \pi \sigma^2}} \cdot s  $.  \vspace*{0.5em}  \\
+Similarly, for $h(x) = h_{C}(x)  = \frac{1}{ \pi }  \frac{ \sigma }{  \sigma ^2 + (x-\mu)^2  }  $:   \vspace*{0.5em} 
+$ \displaystyle{ \int_{ \mathbb{R} }  \omega (h_{C},x,s)  \, \text{d}\lambda(x) } \leq 4h_{C}(\mu) = \frac{4}{ \pi \sigma} \cdot s$ .  \\
+
+
+
+
+
+
+
+\newpage
+
+
+
+
+\end{document}
