@@ -239,6 +239,7 @@ k_fold_knn_comparison('nursery.bc',k_list, 'ls')
 
 k_fold_hist_comparison('wilt.bc',s_list, k_list,'ls')
 k_fold_knn_comparison('wilt.bc',k_list, 'ls')
+'''
 
 k_fold_hist_comparison('wine_quality_all.bc',s_list, k_list,'ls')
 k_fold_knn_comparison('wine_quality_all.bc',k_list, 'ls')
