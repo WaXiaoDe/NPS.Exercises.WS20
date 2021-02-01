@@ -220,8 +220,8 @@ def k_fold_hist_comparison(name , s_list , k_list, method , a=0.5 ):
 #k_fold_cross_validation_knn('bank-marketing.csv', k=5 , method='ls')
 
 s_list = [2,1,0.5,0.1,0.05,0.01,0.005]
-k_list = [1,2,3,4,5,6,7,8,9,10]
-k_fold_hist_comparison('htru.bc',s_list, k_list,'ls')
+k_list = [2,3,4,5,6,7,8,9,10]
+'''k_fold_hist_comparison('htru.bc',s_list, k_list,'ls')
 k_fold_knn_comparison('htru.bc',k_list, 'ls')
 k_fold_hist_comparison('htru.bc',s_list, k_list,'bc')
 k_fold_knn_comparison('htru.bc',k_list, 'bc')
@@ -229,4 +229,6 @@ k_fold_hist_comparison('nursery.bc',s_list, k_list,'ls')
 k_fold_knn_comparison('nursery.bc',k_list, 'ls')
 k_fold_hist_comparison('wilt.bc',s_list, k_list,'ls')
 k_fold_knn_comparison('wilt.bc',k_list, 'ls')
+'''
 
+k_fold_cross_validation_knn(os.getcwd()+'/Data_sets_for_binary_classification/'+'htru2.bc'+'.train.csv',1,'ls')
