@@ -155,7 +155,7 @@ def predict_test_data(train_X, train_Y, test_data, k):
     return predict_label
 
 
-def k_fold_cross_validation_knn(name , k , method , a = 0.5):
+def k_fold_cross_validation_knn(name , k , k0, method , a = 0.5):
     L = loss_choice(method,a)
     
     whole_data = af.read_binary_classified_data(name)
@@ -176,7 +176,7 @@ def k_fold_cross_validation_knn(name , k , method , a = 0.5):
                 D_i_p = D_i_p + data_sets[j]
         X_train , Y_train = af.separate_label(D_i_p)
         X_test , Y_test = af.separate_label(D_i)
-        labels = predict_test_data(X_train, Y_train , X_test,k)
+        labels = predict_test_data(X_train, Y_train , X_test,k0)
         s = 0
         for n in range(len(labels)):
             s += L(Y_test[n],labels[n]) 
@@ -186,14 +186,15 @@ def k_fold_cross_validation_knn(name , k , method , a = 0.5):
     return total_error/k
 
 
-def k_fold_knn_comparison(name , k_list , method , a=0.5):
-    filename = os.getcwd()+'\\Data_sets_for_binary_classification\\'+name+'.train.csv'
+def k_fold_knn_comparison(name , k_list , k0_list , method , a=0.5):
+    filename = os.getcwd()+'/Data_sets_for_binary_classification/'+name+'.train.csv'
     result = []
     for k in k_list:
-        print("k :",k)
-        error = k_fold_cross_validation_knn(filename , k , method)
-        print(k,error)
-        result.append([k,error])
+        for k0 in k0_list:
+            print("k :",k)
+            error = k_fold_cross_validation_knn(filename , k , k0 , method)
+            print(k,k0,error)
+            result.append([k,k0,error])
     af.writeCsv(name +'.'+method + '.k_fold_knn_comparison.csv',result)
         
 
@@ -216,34 +217,35 @@ def k_fold_hist_comparison(name , s_list , k_list, method , a=0.5 ):
 #####     Execution Area     #####
 
 #k_fold_cross_validation_hist('bank-marketing.csv', k=2 , s=2 , method='ls')
-
 #k_fold_cross_validation_knn('bank-marketing.csv', k=5 , method='ls')
+
 
 s_list = [2,1,0.5,0.1,0.05,0.01,0.005]
 k_list = [2,3,4,5,6,7,8,9,10]
+k0_list = [1,2,3,4,5,6,7,8,9,10]
 
-k_fold_hist_comparison('htru2.bc',s_list, k_list,'ls')
-k_fold_knn_comparison('htru2.bc',k_list, 'ls')
+#k_fold_hist_comparison('htru2.bc',s_list, k_list,'ls')
+k_fold_knn_comparison('htru2.bc',k_list, k0_list, 'ls')
 
 k_fold_hist_comparison('htru2.bc',s_list, k_list,'bc')
-k_fold_knn_comparison('htru2.bc',k_list, 'bc')
+k_fold_knn_comparison('htru2.bc',k_list, k0_list,  'bc')
 
 k_fold_hist_comparison('htru2.bc',s_list, k_list,'a0.1',a=0.1)
-k_fold_knn_comparison('htru2.bc',k_list, 'a0.1',a=0.1)
+k_fold_knn_comparison('htru2.bc',k_list, k0_list, 'a0.1',a=0.1)
 
 k_fold_hist_comparison('htru2.bc',s_list, k_list,'a0.9',a=0.1)
-k_fold_knn_comparison('htru2.bc',k_list, 'a0.9',a=0.9)
+k_fold_knn_comparison('htru2.bc',k_list, k0_list, 'a0.9',a=0.9)
 
 k_fold_hist_comparison('nursery.bc',s_list, k_list,'ls')
-k_fold_knn_comparison('nursery.bc',k_list, 'ls')
+k_fold_knn_comparison('nursery.bc',k_list, k0_list, 'ls')
 
 k_fold_hist_comparison('wilt.bc',s_list, k_list,'ls')
-k_fold_knn_comparison('wilt.bc',k_list, 'ls')
-'''
+k_fold_knn_comparison('wilt.bc',k_list, k0_list, 'ls')
+
 
 k_fold_hist_comparison('wine_quality_all.bc',s_list, k_list,'ls')
-k_fold_knn_comparison('wine_quality_all.bc',k_list, 'ls')
+k_fold_knn_comparison('wine_quality_all.bc',k_list, k0_list, 'ls')
 
 k_fold_hist_comparison('seismic_bumps.bc',s_list, k_list,'ls')
-k_fold_knn_comparison('seismic_bumps.bc',k_list, 'ls')
+k_fold_knn_comparison('seismic_bumps.bc',k_list, k0_list, 'ls')
 
